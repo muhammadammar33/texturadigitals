@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sceptica:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -21,6 +22,44 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  --c:no-repeat linear-gradient(#ff0000 0 0);
+  background:
+    var(--c) 0 0,
+    var(--c) 100% 0,
+    var(--c) 100% 100%,
+    var(--c) 0 100%;
+  animation: l1 1s infinite alternate;
+}
+@keyframes l1 {
+  0%   {background-size: 0    4px,4px 0   ,0    4px,4px 0   }
+  25%  {background-size: 100% 4px,4px 0   ,0    4px,4px 0   }
+  50%  {background-size: 100% 4px,4px 100%,0    4px,4px 0   }
+  75%  {background-size: 100% 4px,4px 100%,100% 4px,4px 0   }
+  90%,
+  100% {background-size: 100% 4px,4px 100%,100% 4px,4px 100%}
+}
+
+/* HTML: <div class="loader"></div> */
+.loader1 {
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+}
+@keyframes l5 {
+    0%  {box-shadow: 20px 0 #ff0000, -20px 0 #0002;background: #ff0000 }
+    33% {box-shadow: 20px 0 #ff0000, -20px 0 #0002;background: #0002}
+    66% {box-shadow: 20px 0 #0002,-20px 0 #ff0000; background: #0002}
+    100%{box-shadow: 20px 0 #0002,-20px 0 #ff0000; background: #ff0000 }
 }
