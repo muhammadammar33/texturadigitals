@@ -33,19 +33,19 @@ export default function Header() {
         <nav className={`flex space-x-6 text-sm transition-colors duration-300 ${
           isScrolled ? 'text-black' : 'text-white'
         }`} style={{fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol'}}>
-          <a href="#" className="hover:text-red-500 font-bold">
+          <a href="/" className="hover:text-red-500 font-bold">
             Home
           </a>
-          <a href="#" className="hover:text-red-500 font-bold">
+          <a href="/about" className="hover:text-red-500 font-bold">
             About Us
           </a>
-          <a href="#" className="hover:text-red-500 font-bold">
+          <a href="/contact" className="hover:text-red-500 font-bold">
             Contact Us
           </a>
-          <a href="#" className="hover:text-red-500 font-bold">
+          <a href="/pricing" className="hover:text-red-500 font-bold">
             Pricing
           </a>
-          <a href="#" className="hover:text-red-500 font-bold">
+          <a href="/portfolio" className="hover:text-red-500 font-bold">
             Portfolio
           </a>
           <a href="#" className="hover:text-red-500 font-bold">

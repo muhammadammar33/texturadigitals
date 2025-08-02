@@ -136,7 +136,7 @@ export default function Portfolio() {
     };
 
     return (
-        <div className="text-white min-h-screen">
+        <div className="text-white pb-16 min-h-screen">
             <div className="bg-black pt-16 pb-32">
                 {/* Header Section */}
                 <div className="text-center mb-8 px-4">

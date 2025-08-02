@@ -23,7 +23,7 @@ export default function Awards() {
   ];
 
   return (
-    <div className="bg-white pt-16 px-4">
+    <div className="bg-gray-100 pt-16 px-4">
       {/* Header Section */}
       <div className="text-center max-w-6xl mx-auto">
         <h1 className="text-4xl lg:text-4xl font-bold text-black mb-4">
