@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CarousalPage() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,7 +23,7 @@ export default function CarousalPage() {
         titles: ["Book Publishing", "Marketing", "App Design & Development", "Graphic Design", "Website Development"],
         descriptions: [
             "Every great book begins with a well-crafted manuscript, but even the best writing can benefit from professional editing. Our expert editors will work closely with you to refine your manuscript, improve flow, structure, and style, and ensure it's free from grammatical errors.",
-            "In today’s competitive digital landscape, effective marketing is essential to your business success. Our marketing services are designed to create a comprehensive strategy that attracts, engages, and converts your audience. From social media marketing to SEO and content marketing, we help you build a strong presence and connect with your target market.",
+            "In today's competitive digital landscape, effective marketing is essential to your business success. Our marketing services are designed to create a comprehensive strategy that attracts, engages, and converts your audience. From social media marketing to SEO and content marketing, we help you build a strong presence and connect with your target market.",
             "Whether you need a simple app or a complex enterprise solution, Textura Digitals offers cutting-edge app design and development services that bring your ideas to life. Our mobile and web applications are user-friendly, scalable, and designed to provide an exceptional user experience.",
             "Great graphic design tells a compelling story and leaves a lasting impression. At Textura Digitals, we offer comprehensive graphic design services tailored to your business needs. From logos and business cards to brochures and social media assets, we ensure your brand identity is consistent, professional, and impactful.",
             "Your website is often the first point of contact for potential clients. With our expert website design and development services, we ensure your online presence is visually appealing, easy to navigate, and optimized for search engines. We create websites that not only look great but also perform seamlessly across all devices."],
@@ -33,6 +34,13 @@ export default function CarousalPage() {
             { src: "/assets/Logo-And-Branding.webp", alt: "Logo And Branding" },
             { src: "/assets/Logo-And-Branding.webp", alt: "Web Development" }
         ],
+        learnMoreLinks: [
+            "/book-publishing",
+            "/marketing",
+            "/app-design",
+            "/graphic-design",
+            "/web-development"
+        ]
     };
 
     const changeSlide = (newSlide) => {
@@ -103,12 +111,16 @@ export default function CarousalPage() {
                                 {slideData.descriptions[currentSlide]}
                             </p>
                             <div className="flex gap-4">
-                                <button className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition-colors">
-                                    Learn More
-                                </button>
-                                <button className="border border-gray-900 text-gray-900 font-bold px-6 py-3 rounded hover:bg-gray-100 transition-colors">
-                                    +1-628-256-4002
-                                </button>
+                                <Link href={slideData.learnMoreLinks[currentSlide]}>
+                                    <button className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition-colors">
+                                        Learn More
+                                    </button>
+                                </Link>
+                                <Link href="tel:+16282564002">
+                                    <button className="border border-gray-900 text-gray-900 font-bold px-6 py-3 rounded hover:bg-gray-100 transition-colors">
+                                        +1-628-256-4002
+                                    </button>
+                                </Link>
                             </div>
                         </div>
 
@@ -152,8 +164,8 @@ export default function CarousalPage() {
                     <div className="flex justify-center mt-12">
                         <div className="flex items-center gap-8 relative">
                             {services.map((service, index) => (
-                                <>
-                                    <div key={index} className="flex flex-col items-center gap-2">
+                                <React.Fragment key={index}>
+                                    <div className="flex flex-col items-center gap-2">
                                         <button
                                             onClick={() => changeSlide(index)}
                                             className={`text-sm font-medium transition-colors ${
@@ -176,7 +188,7 @@ export default function CarousalPage() {
                                     {index < services.length - 1 && (
                                         <div className="w-16 h-0.5 bg-gray-300 mt-6" />
                                     )}
-                                </>
+                                </React.Fragment>
                             ))}
                         </div>
                     </div>

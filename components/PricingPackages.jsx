@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function PricingPackages() {
     const [activeCategory, setActiveCategory] = useState("LOGO");
@@ -516,12 +517,16 @@ export default function PricingPackages() {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3 flex-shrink-0">
-                  <button className="flex-1 bg-black text-white py-3 px-4 rounded font-medium hover:bg-red-500 hover:text-black transition-colors">
-                    Order Now
-                  </button>
-                  <button className="flex-1 bg-black text-white py-3 px-4 rounded font-medium hover:bg-red-500 hover:text-black transition-colors">
-                    Live Chat
-                  </button>
+                  <Link href={`/order/${pkg.name}`}>
+                    <button className="flex-1 bg-black text-white py-3 px-4 rounded font-medium hover:bg-red-500 hover:text-black transition-colors">
+                      Order Now
+                    </button>
+                  </Link>
+                  <Link href="/live-chat">
+                    <button className="flex-1 bg-black text-white py-3 px-4 rounded font-medium hover:bg-red-500 hover:text-black transition-colors">
+                      Live Chat
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -532,12 +537,16 @@ export default function PricingPackages() {
       {/* CTA Section */}
       <div className="text-center mt-16 px-4">
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-black text-white px-8 py-3 rounded font-medium hover:bg-red-500 transition-colors">
-            Let's Get Started
-          </button>
-          <button className="border border-black text-black px-8 py-3 rounded font-medium hover:bg-black hover:text-white transition-colors">
-            +1 (800) 961-4590
-          </button>
+          <Link href="/get-a-quote">
+              <button className="bg-black text-white px-8 py-3 rounded font-medium hover:bg-red-500 hover:text-black transition-all duration-500 transform hover:scale-105 animate-pulse">
+                  Let's Get Started
+              </button>
+          </Link>
+          <Link href="tel:+18009614590">
+              <button className="border border-black text-black px-8 py-3 rounded font-medium hover:bg-white hover:text-red-500 hover:border-red-500 transition-colors">
+                  +1 (800) 961-4590
+              </button>
+          </Link>
         </div>
       </div>
     </div>

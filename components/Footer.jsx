@@ -38,11 +38,11 @@ export default function Footer() {
           <div>
             <h3 className="text-red-500 font-bold text-md mb-6">Our Services</h3>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">BOOK PUBLISHING</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">GRAPHIC DESIGN</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">WEBSITE DEVELOPMENT</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">APP DESIGN & DEVELOPMENT</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">MARKETING</a></li>
+              <li><a href="/book-publishing" className="text-gray-300 hover:text-white transition-colors">BOOK PUBLISHING</a></li>
+              <li><a href="/graphic-design" className="text-gray-300 hover:text-white transition-colors">GRAPHIC DESIGN</a></li>
+              <li><a href="/website-development" className="text-gray-300 hover:text-white transition-colors">WEBSITE DEVELOPMENT</a></li>
+              <li><a href="/app-design-and-development" className="text-gray-300 hover:text-white transition-colors">APP DESIGN & DEVELOPMENT</a></li>
+              <li><a href="/marketing" className="text-gray-300 hover:text-white transition-colors">MARKETING</a></li>
             </ul>
           </div>
 
@@ -50,12 +50,12 @@ export default function Footer() {
           <div>
             <h3 className="text-red-500 font-bold text-md mb-6">Company</h3>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Packages</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Portfolio</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Terms & Condition</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="/about" className="text-gray-300 hover:text-white transition-colors">About</a></li>
+              <li><a href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/pricing" className="text-gray-300 hover:text-white transition-colors">Packages</a></li>
+              <li><a href="/portfolio" className="text-gray-300 hover:text-white transition-colors">Portfolio</a></li>
+              <li><a href="/terms" className="text-gray-300 hover:text-white transition-colors">Terms & Condition</a></li>
+              <li><a href="/privacy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
 

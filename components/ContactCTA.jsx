@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function ContactCTA() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +25,7 @@ export default function ContactCTA() {
         <div
           className={`${
             isScrolled ? "bg-black" : "bg-gray-600/30"
-          } text-red-600 rounded-l-full cursor-pointer shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 flex items-center overflow-hidden w-12 group-hover:w-44 transition-all duration-300 ease-out`}
+          } text-red-600 rounded-l-full cursor-pointer shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 flex items-center overflow-hidden w-12 group-hover:w-52 transition-all duration-300 ease-out`}
         >
           <div className="flex items-center gap-3 px-3 py-3 whitespace-nowrap">
             <FontAwesomeIcon
@@ -32,8 +33,8 @@ export default function ContactCTA() {
               size="lg"
               className="hover:scale-105 transition-transform"
             />
-            <span className="text-white pl-2 border-l border-gray-200 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-              Chat with us
+            <span className="text-red-600 pl-2 border-l border-gray-200 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+              Chat With Us
             </span>
           </div>
         </div>
@@ -44,7 +45,7 @@ export default function ContactCTA() {
         <div
           className={`${
             isScrolled ? "bg-black" : "bg-gray-600/30"
-          } text-red-600 rounded-l-full cursor-pointer shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 flex items-center overflow-hidden w-12 group-hover:w-44 transition-all duration-300 ease-out`}
+          } text-red-600 rounded-l-full cursor-pointer shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 flex items-center overflow-hidden w-12 group-hover:w-52 transition-all duration-300 ease-out`}
         >
           <div className="flex items-center gap-3 px-3 py-3 whitespace-nowrap">
             <FontAwesomeIcon
@@ -52,9 +53,11 @@ export default function ContactCTA() {
               size="lg"
               className="hover:scale-105 transition-transform"
             />
-            <span className="text-white pl-2 border-l border-gray-200 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-              Call us now
-            </span>
+            <Link href="tel:+16282564002">
+              <span className="text-red-600 pl-2 border-l border-gray-200 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                +1-628-256-4002
+              </span> 
+            </Link>
           </div>
         </div>
       </div>

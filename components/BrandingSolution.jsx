@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BrandingSolution() {
   return (
@@ -94,9 +95,11 @@ export default function BrandingSolution() {
 
         {/* Order Button */}
         <div className="text-center mt-16">
-          <button className="bg-black text-white px-4 py-3 rounded-lg text-sm font-bold hover:bg-red-500 hover:text-black transition-colors duration-300">
-            Order Now
-          </button>
+          <Link href={`/order-sequence`}>
+            <button className="flex-1 bg-black text-white py-3 px-4 rounded font-medium hover:bg-red-500 hover:text-black transition-colors">
+              Order Now
+            </button>
+          </Link>
         </div>
 
         {/* Contact Information */}
