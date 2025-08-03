@@ -22,19 +22,19 @@ export default function ServicesMenu() {
       <nav className={`flex flex-wrap gap-16 text-sm transition-colors duration-300 ${
         isScrolled ? 'text-white' : 'text-white'
       }`}>
-        <a href="#" className="hover:text-red-500">
+        <a href="/book-publishing" className="hover:text-red-500">
           BOOK PUBLISHING
         </a>
-        <a href="#" className="hover:text-red-500">
+        <a href="/graphic-design" className="hover:text-red-500">
           GRAPHIC DESIGN
         </a>
-        <a href="#" className="hover:text-red-500">
+        <a href="/website-development" className="hover:text-red-500">
           WEBSITE DEVELOPMENT
         </a>
-        <a href="#" className="hover:text-red-500">
+        <a href="/app-design-and-development" className="hover:text-red-500">
           APP DESIGN & DEVELOPMENT
         </a>
-        <a href="#" className="hover:text-red-500">
+        <a href="/marketing" className="hover:text-red-500">
           MARKETING
         </a>
       </nav>

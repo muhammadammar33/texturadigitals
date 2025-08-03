@@ -48,15 +48,15 @@ export default function Header() {
           <a href="/portfolio" className="hover:text-red-500 font-bold">
             Portfolio
           </a>
-          <a href="#" className="hover:text-red-500 font-bold">
+          <a href="tel:+1-628-256-4002" className="hover:text-red-500 font-bold">
             📞+1-628-256-4002
           </a>
         </nav>
-        <button className={`${
+        <a href="/get-a-quote" className={`${
           isScrolled ? 'bg-black' : 'bg-gray-600/30'
-        } text-red-500 px-6 py-3 rounded ml-6 text-sm transition-colors duration-300`} style={{fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol'}}>
+        } text-red-500 px-6 py-3 rounded ml-6 text-sm transition-colors duration-300 inline-block`} style={{fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol'}}>
           Get A Quote
-        </button>
+        </a>
       </div>
     </header>
   );

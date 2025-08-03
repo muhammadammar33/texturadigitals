@@ -4,11 +4,14 @@ import Image from "next/image";
 
 export default function AboutHero() {
   const clientLogos = [
-    { src: "/assets/sunjoy-logo.png", alt: "SunJoy" },
-    { src: "/assets/qualityauto-logo.png", alt: "QualityAuto" },
-    { src: "/assets/createspace-logo.png", alt: "CreateSpace" },
-    { src: "/assets/truecorners-logo.png", alt: "True Corners" },
-    { src: "/assets/prosites-logo.png", alt: "ProSites" },
+    { src: "/assets/about/cl-1.svg", alt: "SunJoy" },
+    { src: "/assets/about/cl-2.svg", alt: "QualityAuto" },
+    { src: "/assets/about/cl-3.svg", alt: "CreateSpace" },
+    { src: "/assets/about/cl-4.svg", alt: "True Corners" },
+    { src: "/assets/about/cl-5.svg", alt: "ProSites" },
+    { src: "/assets/about/cl-6.svg", alt: "ProSites" },
+    { src: "/assets/about/cl-7.svg", alt: "ProSites" },
+    { src: "/assets/about/cl-8.svg", alt: "ProSites" },
   ];
 
   return (
@@ -36,21 +39,39 @@ export default function AboutHero() {
           </p>
 
           {/* Client Logos */}
-          <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
-            {clientLogos.map((logo, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center p-4 hover:scale-110 transition-transform duration-300"
-              >
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={150}
-                  height={60}
-                  className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity duration-300"
-                />
-              </div>
-            ))}
+          <div className="relative overflow-hidden w-full max-w-4xl mx-auto">
+            <div className="flex animate-slide-left">
+              {/* First set of logos */}
+              {clientLogos.map((logo, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 flex items-center justify-center p-4 w-48"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={150}
+                    height={60}
+                    className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {clientLogos.map((logo, index) => (
+                <div
+                  key={`duplicate-${index}`}
+                  className="flex-shrink-0 flex items-center justify-center p-4 w-48"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={150}
+                    height={60}
+                    className="h-12 w-auto object-contain filter brightness-0 invert opacity-80 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -79,6 +100,21 @@ export default function AboutHero() {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes slide-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+
+        .animate-slide-left {
+          animation: slide-left 20s linear infinite;
+        }
+      `}</style>
     </div>
   );
 }

@@ -131,7 +131,7 @@ export default function PricingPackages() {
               ]
           },
           {
-              name: "Mascot ",
+              name: "Mascot Silver",
               price: "$300.00",
               features: [
                   "(1) Mascot Logo",
@@ -144,7 +144,7 @@ export default function PricingPackages() {
               ]
           },
           {
-              name: "Mascot ",
+              name: "Mascot Gold",
               price: "$500.00",
               features: [
                   "(1) Mascot Logo",
@@ -483,7 +483,7 @@ export default function PricingPackages() {
       </div>
 
       {/* Packages Grid */}
-      <div className="max-w-6xl mx-auto px-4 flex justify-center">
+      <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {packageData[activeCategory]?.map((pkg, index) => (
             <div
