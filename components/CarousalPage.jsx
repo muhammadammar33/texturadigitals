@@ -75,9 +75,9 @@ export default function CarousalPage() {
     return (
         <div>
             {/* Custom Logo Design Agency Section */}
-            <section className="bg-gray-100 py-6 sm:py-8 md:py-16 px-4">
+            <section className="bg-gray-100 py-8 sm:py-12 md:py-20 px-4">
                 <div className="max-w-5xl mx-auto text-center">
-                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4 md:mb-6 leading-tight">
+                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6 md:mb-8 leading-tight">
                     Textura Digitals – Your Trusted{" "}
                     <span className="text-red-500">Custom Logo Design</span>
                     <br className="hidden sm:block" />
@@ -85,7 +85,7 @@ export default function CarousalPage() {
                     Agency in the USA!
                 </h1>
                 
-                <p className="text-gray-600 text-xs sm:text-sm md:text-md leading-relaxed max-w-3xl mx-auto px-2">
+                <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto px-2">
                     At Textura Digitals, we don't just create logos; we craft brand identities that elevate{" "}
                     <br className="hidden lg:block" />
                     businesses to new heights. As a custom logo design agency, we understand the power of a{" "}
@@ -100,11 +100,11 @@ export default function CarousalPage() {
             </section>
 
             {/* Carousel Section */}
-            <section className="bg-gray-100 py-6 sm:py-8 md:py-16 px-2 sm:px-4 relative">
+            <section className="bg-gray-100 py-8 sm:py-12 md:py-20 px-2 sm:px-4 relative">
                 <div className="max-w-7xl mx-auto">
-                    <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-12 items-center">
+                    <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-16 items-center">
                         {/* Left Content */}
-                        <div className={`space-y-3 sm:space-y-4 md:space-y-6 order-2 lg:order-1 px-2 sm:px-0 transition-all duration-300 ease-in-out ${
+                        <div className={`space-y-4 sm:space-y-6 md:space-y-8 order-2 lg:order-1 px-2 sm:px-0 transition-all duration-300 ease-in-out ${
                             isAnimating 
                                 ? `opacity-0 transform ${slideDirection === 'right' ? 'translate-x-[-40px]' : 'translate-x-[40px]'}` 
                                 : 'opacity-100 transform translate-x-0'
@@ -112,17 +112,17 @@ export default function CarousalPage() {
                             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
                                 {slideData.titles[currentSlide]}
                             </h2>
-                            <p className="text-gray-600 leading-relaxed text-xs sm:text-sm md:text-base">
+                            <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
                                 {slideData.descriptions[currentSlide]}
                             </p>
-                            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4">
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 mt-6 sm:mt-8">
                                 <Link href={slideData.learnMoreLinks[currentSlide]} className="w-full sm:w-auto">
-                                    <button className="w-full sm:w-auto bg-black text-white px-4 sm:px-6 py-2 sm:py-3 rounded text-sm sm:text-base hover:bg-gray-800 transition-colors">
+                                    <button className="w-full sm:w-auto bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded text-base sm:text-lg hover:bg-gray-800 transition-colors font-medium">
                                         Learn More
                                     </button>
                                 </Link>
                                 <Link href="tel:+16282564002" className="w-full sm:w-auto">
-                                    <button className="w-full sm:w-auto border border-gray-900 text-gray-900 font-bold px-4 sm:px-6 py-2 sm:py-3 rounded text-sm sm:text-base hover:bg-gray-100 transition-colors">
+                                    <button className="w-full sm:w-auto border-2 border-gray-900 text-gray-900 font-bold px-6 sm:px-8 py-3 sm:py-4 rounded text-base sm:text-lg hover:bg-gray-100 transition-colors">
                                         +1-628-256-4002
                                     </button>
                                 </Link>
@@ -148,7 +148,7 @@ export default function CarousalPage() {
                             {/* Right Navigation Arrow */}
                             <button 
                                 onClick={() => changeSlide(Math.min(services.length - 1, currentSlide + 1))}
-                                className="absolute right-0 sm:right-2 lg:right-[-35px] top-1/2 transform -translate-y-1/2 bg-black text-white w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors text-xs lg:text-sm"
+                                className="absolute right-0 sm:right-4 lg:right-[-50px] top-1/2 transform -translate-y-1/2 bg-black text-white w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors text-sm sm:text-base lg:text-lg shadow-lg"
                                 disabled={isAnimating}
                             >
                                 <FontAwesomeIcon icon={faChevronRight} />
@@ -159,23 +159,23 @@ export default function CarousalPage() {
                     {/* Left Navigation Arrow - positioned for entire carousel */}
                     <button 
                         onClick={() => changeSlide(Math.max(0, currentSlide - 1))}
-                        className="absolute left-0 sm:left-2 lg:left-12 top-1/2 transform -translate-y-1/2 bg-black text-white w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors z-10 text-xs lg:text-sm"
+                        className="absolute left-0 sm:left-4 lg:left-8 top-1/2 transform -translate-y-1/2 bg-black text-white w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors z-10 text-sm sm:text-base lg:text-lg shadow-lg"
                         disabled={isAnimating}
                     >
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
 
                     {/* Service Navigation */}
-                    <div className="flex justify-center mt-6 sm:mt-8 md:mt-12">
-                        <div className="flex items-center gap-2 sm:gap-4 md:gap-8 relative overflow-x-auto max-w-full px-2 sm:px-4 md:px-0">
-                            <div className="flex items-center gap-2 sm:gap-4 md:gap-8 min-w-max">
+                    <div className="flex justify-center mt-8 sm:mt-12 md:mt-16">
+                        <div className="flex items-center gap-3 sm:gap-6 md:gap-10 relative overflow-x-auto max-w-full px-2 sm:px-4 md:px-0">
+                            <div className="flex items-center gap-3 sm:gap-6 md:gap-10 min-w-max">
                                 {services.map((service, index) => (
                                     <React.Fragment key={index}>
-                                        <div className="flex flex-col items-center gap-1 sm:gap-2">
+                                        <div className="flex flex-col items-center gap-2 sm:gap-3">
                                             <button
                                                 onClick={() => changeSlide(index)}
-                                                className={`text-xs sm:text-sm font-medium transition-colors whitespace-nowrap ${
-                                                    index === currentSlide ? 'text-gray-800' : 'text-gray-400'
+                                                className={`text-sm sm:text-base md:text-lg font-medium transition-colors whitespace-nowrap px-2 py-1 rounded ${
+                                                    index === currentSlide ? 'text-gray-800 font-bold' : 'text-gray-400 hover:text-gray-600'
                                                 }`}
                                                 disabled={isAnimating}
                                             >
@@ -183,16 +183,17 @@ export default function CarousalPage() {
                                             </button>
                                             <div className={`transition-all duration-300 ${
                                                 index === currentSlide 
-                                                    ? 'w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 border-2 border-gray-800 rounded-full flex items-center justify-center' 
-                                                    : 'w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 bg-gray-300 rounded-full'
-                                            }`}>
+                                                    ? 'w-4 h-4 sm:w-5 sm:h-5 md:w-8 md:h-8 border-2 border-gray-800 rounded-full flex items-center justify-center' 
+                                                    : 'w-4 h-4 sm:w-5 sm:h-5 md:w-8 md:h-8 bg-gray-300 rounded-full hover:bg-gray-400 cursor-pointer'
+                                            }`}
+                                            onClick={() => changeSlide(index)}>
                                                 {index === currentSlide && (
-                                                    <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 bg-gray-800 rounded-full" />
+                                                    <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-gray-800 rounded-full" />
                                                 )}
                                             </div>
                                         </div>
                                         {index < services.length - 1 && (
-                                            <div className="w-4 sm:w-8 md:w-16 h-0.5 bg-gray-300 mt-4 sm:mt-6" />
+                                            <div className="w-6 sm:w-10 md:w-20 h-0.5 bg-gray-300 mt-6 sm:mt-8" />
                                         )}
                                     </React.Fragment>
                                 ))}
