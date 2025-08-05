@@ -104,7 +104,7 @@ export default function CarousalPage() {
                 <div className="max-w-7xl mx-auto relative">
                     <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-16 items-center">
                         {/* Left Content */}
-                        <div className={`space-y-4 sm:space-y-6 md:space-y-8 order-2 lg:order-1 px-2 sm:px-0 transition-all duration-300 ease-in-out ${
+                        <div className={`space-y-4 sm:space-y-6 md:space-y-8 order-1 lg:order-1 px-2 sm:px-0 transition-all duration-300 ease-in-out ${
                             isAnimating 
                                 ? `opacity-0 transform ${slideDirection === 'right' ? 'translate-x-[-40px]' : 'translate-x-[40px]'}` 
                                 : 'opacity-100 transform translate-x-0'
@@ -130,7 +130,7 @@ export default function CarousalPage() {
                         </div>
 
                         {/* Right Content - Image */}
-                        <div className="relative order-1 lg:order-2 px-4 sm:px-0">
+                        <div className="relative order-2 lg:order-2 px-4 sm:px-0">
                             <div className={`flex items-center justify-center transition-all duration-300 ease-in-out ${
                                 isAnimating 
                                     ? `opacity-0 transform ${slideDirection === 'left' ? 'translate-x-[40px]' : 'translate-x-[-40px]'}` 
@@ -141,7 +141,7 @@ export default function CarousalPage() {
                                     alt={slideData.images[currentSlide].alt}
                                     width={500}
                                     height={400}
-                                    className="max-w-full h-auto object-contain w-full max-w-xs sm:max-w-md lg:max-w-full"
+                                    className="max-w-full h-auto object-contain w-full sm:max-w-md lg:max-w-full"
                                 />
                             </div>
                         </div>

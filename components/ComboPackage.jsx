@@ -16,7 +16,7 @@ export default function ComboPackage() {
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="text-white space-y-4 sm:space-y-6 text-center lg:text-left">
+          <div className="text-white space-y-4 sm:space-y-6 text-center lg:text-left order-1 lg:order-1">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
               All In One Exclusive<br />
               Brand Design Package
@@ -72,7 +72,7 @@ export default function ComboPackage() {
           </div>
 
           {/* Right Content - Pricing & CTA */}
-          <div className="text-center lg:text-left space-y-4 sm:space-y-6 order-first lg:order-last">
+          <div className="text-center lg:text-left space-y-4 sm:space-y-6 order-2 lg:order-2">
             <p className="text-gray-200 text-xs sm:text-sm leading-relaxed max-w-md mx-auto lg:mx-0">
               Our ultimate, all-in-one combo package offering the bang for your buck! This package is ideal for brands that want the complete digital solution with value for money.
             </p>
