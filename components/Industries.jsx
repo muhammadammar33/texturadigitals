@@ -65,23 +65,23 @@ export default function Industries() {
       </div>
 
       {/* Industries Grid */}
-      <div className="max-w-4xl mx-auto">
-        <div className="grid grid-cols-1 gap-3 sm:gap-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 md:gap-6">
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="flex items-center p-3 sm:p-4 bg-gray-900/30 border-l-4 hover:bg-gray-900/50 transition-colors duration-300"
+              className="flex flex-col items-center p-3 sm:p-4 transition-all duration-300 hover:scale-105 cursor-pointer bg-gray-900/30 rounded-lg border border-gray-800/50"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 mr-4 flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 mb-2 sm:mb-3 flex items-center justify-center">
                 <Image 
                   src={`/assets/${industry.image}`}
                   alt={industry.name}
-                  width={40}
-                  height={40}
-                  className="object-contain w-full h-full invert"
+                  width={48}
+                  height={48}
+                  className="object-contain filter invert w-full h-full"
                 />
               </div>
-              <h3 className="text-white text-sm sm:text-base font-medium">
+              <h3 className="text-white text-xs sm:text-sm font-medium text-center leading-tight">
                 {industry.name}
               </h3>
             </div>
