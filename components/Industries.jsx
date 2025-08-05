@@ -78,7 +78,7 @@ export default function Industries() {
                   alt={industry.name}
                   width={40}
                   height={40}
-                  className="object-contain w-full h-full filter brightness-0 invert"
+                  className="object-contain w-full h-full filter invert"
                 />
               </div>
               <h3 className="text-white text-sm sm:text-base font-medium">
