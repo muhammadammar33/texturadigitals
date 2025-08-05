@@ -70,7 +70,7 @@ export default function Industries() {
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="flex items-center p-3 sm:p-4 bg-gray-900/30 rounded-lg border-l-4 hover:bg-gray-900/50 transition-colors duration-300"
+              className="flex items-center p-3 sm:p-4 bg-gray-900/30 border-l-4 hover:bg-gray-900/50 transition-colors duration-300"
             >
               <div className="w-8 h-8 sm:w-10 sm:h-10 mr-4 flex items-center justify-center flex-shrink-0">
                 <Image 
@@ -78,7 +78,7 @@ export default function Industries() {
                   alt={industry.name}
                   width={40}
                   height={40}
-                  className="object-contain w-full h-full filter invert"
+                  className="object-contain w-full h-full invert"
                 />
               </div>
               <h3 className="text-white text-sm sm:text-base font-medium">

@@ -32,7 +32,7 @@ export default function ContactUs() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Side - Content and Illustration */}
-          <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
+          <div className="space-y-6 lg:space-y-8 order-1 lg:order-1">
             <div>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-black mb-4 lg:mb-6 text-center lg:text-left">
                 Contact Us
@@ -62,7 +62,7 @@ export default function ContactUs() {
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 order-1 lg:order-2">
+          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 order-2 lg:order-2">
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               {/* Name and Email Row */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
