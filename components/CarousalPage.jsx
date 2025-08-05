@@ -77,7 +77,7 @@ export default function CarousalPage() {
             {/* Custom Logo Design Agency Section */}
             <section className="bg-gray-100 py-8 sm:py-12 md:py-20 px-4">
                 <div className="max-w-5xl mx-auto text-center">
-                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6 md:mb-8 leading-tight">
+                <h1 className="text-xl sm:text-xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6 md:mb-8 leading-tight">
                     Textura Digitals – Your Trusted{" "}
                     <span className="text-red-500">Custom Logo Design</span>
                     <br className="hidden sm:block" />
@@ -85,7 +85,7 @@ export default function CarousalPage() {
                     Agency in the USA!
                 </h1>
                 
-                <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto px-2">
+                <p className="text-gray-600 text-xs sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto px-2">
                     At Textura Digitals, we don't just create logos; we craft brand identities that elevate{" "}
                     <br className="hidden lg:block" />
                     businesses to new heights. As a custom logo design agency, we understand the power of a{" "}
