@@ -101,7 +101,7 @@ export default function CarousalPage() {
 
             {/* Carousel Section */}
             <section className="bg-gray-100 py-8 sm:py-12 md:py-20 px-2 sm:px-4 relative">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-7xl mx-auto relative">
                     <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-16 items-center">
                         {/* Left Content */}
                         <div className={`space-y-4 sm:space-y-6 md:space-y-8 order-2 lg:order-1 px-2 sm:px-0 transition-all duration-300 ease-in-out ${
@@ -144,25 +144,24 @@ export default function CarousalPage() {
                                     className="max-w-full h-auto object-contain w-full max-w-xs sm:max-w-md lg:max-w-full"
                                 />
                             </div>
-                            
-                            {/* Right Navigation Arrow */}
-                            <button 
-                                onClick={() => changeSlide(Math.min(services.length - 1, currentSlide + 1))}
-                                className="absolute right-0 sm:right-4 lg:right-[-50px] top-1/2 transform -translate-y-1/2 bg-black text-white w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors text-sm sm:text-base lg:text-lg shadow-lg"
-                                disabled={isAnimating}
-                            >
-                                <FontAwesomeIcon icon={faChevronRight} />
-                            </button>
                         </div>
                     </div>
 
-                    {/* Left Navigation Arrow - positioned for entire carousel */}
+                    {/* Navigation Arrows - positioned relative to the entire carousel */}
                     <button 
                         onClick={() => changeSlide(Math.max(0, currentSlide - 1))}
                         className="absolute left-0 sm:left-4 lg:left-8 top-1/2 transform -translate-y-1/2 bg-black text-white w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors z-10 text-sm sm:text-base lg:text-lg shadow-lg"
                         disabled={isAnimating}
                     >
                         <FontAwesomeIcon icon={faChevronLeft} />
+                    </button>
+
+                    <button 
+                        onClick={() => changeSlide(Math.min(services.length - 1, currentSlide + 1))}
+                        className="absolute right-0 sm:right-4 lg:right-8 top-1/2 transform -translate-y-1/2 bg-black text-white w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors z-10 text-sm sm:text-base lg:text-lg shadow-lg"
+                        disabled={isAnimating}
+                    >
+                        <FontAwesomeIcon icon={faChevronRight} />
                     </button>
 
                     {/* Service Navigation */}
