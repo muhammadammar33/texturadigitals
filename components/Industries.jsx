@@ -65,23 +65,23 @@ export default function Industries() {
       </div>
 
       {/* Industries Grid */}
-      <div className="max-w-8xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 sm:gap-4 md:gap-6">
+      <div className="max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 gap-3 sm:gap-4">
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="group flex flex-col sm:flex-row items-center justify-center p-2 sm:p-3 md:p-4 transition-all duration-300 hover:scale-105 cursor-pointer bg-gray-900/20 sm:bg-transparent rounded-lg sm:rounded-none"
+              className="flex items-center p-3 sm:p-4 bg-gray-900/30 rounded-lg border-l-4 border-red-500 hover:bg-gray-900/50 transition-colors duration-300"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-2 sm:mb-3 md:mb-3 flex items-center justify-center duration-300">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 mr-4 flex items-center justify-center flex-shrink-0">
                 <Image 
                   src={`/assets/${industry.image}`}
                   alt={industry.name}
-                  width={48}
-                  height={48}
-                  className="object-contain invert group-hover:brightness-100 group-hover:invert-0 group-hover:hue-rotate-[350deg] group-hover:saturate-150 transition-all duration-300 w-full h-full"
+                  width={40}
+                  height={40}
+                  className="object-contain w-full h-full filter brightness-0 invert"
                 />
               </div>
-              <h3 className="text-white sm:pl-2 text-xs sm:text-xs md:text-xs font-medium text-center sm:text-left leading-tight group-hover:text-red-500 transition-colors duration-300">
+              <h3 className="text-white text-sm sm:text-base font-medium">
                 {industry.name}
               </h3>
             </div>
