@@ -155,43 +155,21 @@ export default function Portfolio() {
                 </div>
 
                 {/* Category Navigation */}
-                <div className="w-full mb-4">
-                    <div className="block sm:hidden">
-                        <div className="overflow-x-auto scrollbar-hide px-4">
-                            <div className="flex gap-4 min-w-max pb-2" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-                                {categories.map((category) => (
-                                <button
-                                    key={category}
-                                    onClick={() => setActiveCategory(category)}
-                                    className={`px-4 py-2 text-sm font-medium transition-all duration-300 whitespace-nowrap rounded-full border ${
-                                    activeCategory === category
-                                        ? "bg-white text-black border-white"
-                                        : "text-white border-gray-600 hover:border-white hover:bg-white hover:text-black"
-                                    }`}
-                                >
-                                    {category}
-                                </button>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div className="hidden sm:block px-2 sm:px-8">
-                        <div className="flex gap-2 flex-wrap justify-center">
-                            {categories.map((category) => (
-                            <button
-                                key={category}
-                                onClick={() => setActiveCategory(category)}
-                                className={`px-4 py-2 text-sm font-medium transition-all duration-300 whitespace-nowrap ${
-                                activeCategory === category
-                                    ? "text-white border-b-2 border-white"
-                                    : "text-gray-400 hover:text-white"
-                                }`}
-                            >
-                                {category}
-                            </button>
-                            ))}
-                        </div>
+                <div className="overflow-x-auto pb-2 mb-4 px-2 sm:px-8">
+                    <div className="flex gap-1 min-w-max sm:flex-wrap sm:justify-center sm:min-w-0">
+                        {categories.map((category) => (
+                        <button
+                            key={category}
+                            onClick={() => setActiveCategory(category)}
+                            className={`px-2 sm:px-4 py-2 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap ${
+                            activeCategory === category
+                                ? "text-white border-b-2 border-white"
+                                : "text-gray-400 hover:text-white"
+                            }`}
+                        >
+                            {category}
+                        </button>
+                        ))}
                     </div>
                 </div>
         </div>
