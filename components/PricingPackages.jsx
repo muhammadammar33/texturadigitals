@@ -455,59 +455,61 @@ export default function PricingPackages() {
     };
 
   return (
-    <div className="bg-gray-50 min-h-screen py-16">
+    <div className="bg-gray-50 min-h-screen py-8 sm:py-12 md:py-16">
       {/* Header Section */}
-      <div className="text-center mb-12 px-4">
-        <h1 className="text-4xl lg:text-4xl font-bold text-black mb-6">
+      <div className="text-center mb-8 sm:mb-12 px-4">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black mb-4 sm:mb-6 leading-tight">
           OUR PACKAGES
         </h1>
-        <p className="text-gray-600 max-w-5xl mx-auto leading-relaxed">
+        <p className="text-gray-600 text-sm sm:text-base max-w-5xl mx-auto leading-relaxed px-2">
           At Textura Digitals, we are proud to offer our customers customized professional logo design packages that meet the needs of every business. Check out our customized packages and choose the best that suits your needs!
         </p>
       </div>
 
       {/* Category Navigation */}
-      <div className="flex flex-wrap justify-center mb-12 px-4">
-        {categories.map((category) => (
-          <button
-            key={category}
-            onClick={() => setActiveCategory(category)}
-            className={`px-6 py-2 text-sm font-medium transition-all duration-300 ${
-              activeCategory === category
-                ? "text-black border-b-2 border-black font-bold"
-                : "text-gray-500 hover:text-black"
-            }`}
-          >
-            {category}
-          </button>
-        ))}
+      <div className="overflow-x-auto pb-2 mb-8 sm:mb-12 px-2 sm:px-4">
+        <div className="flex gap-2 min-w-max sm:flex-wrap sm:justify-center sm:min-w-0">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setActiveCategory(category)}
+              className={`px-3 sm:px-6 py-2 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap ${
+                activeCategory === category
+                  ? "text-black border-b-2 border-black font-bold"
+                  : "text-gray-500 hover:text-black"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Packages Grid */}
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+      <div className="max-w-6xl mx-auto px-2 sm:px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 justify-items-center">
           {packageData[activeCategory]?.map((pkg, index) => (
             <div
               key={index}
-              className="bg-white border border-black rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:scale-110 transition-all duration-600 h-[530px] flex flex-col w-full max-w-sm"
+              className="bg-white border border-black rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 sm:hover:scale-110 transition-all duration-300 sm:duration-600 h-[480px] sm:h-[530px] flex flex-col w-full max-w-sm"
             >
               {/* Package Header */}
-              <div className="bg-black text-white p-6 text-center flex-shrink-0">
-                <h3 className="text-2xl font-bold mb-2">{pkg.name} <br /> Package</h3>
-                <div className="text-3xl font-bold">
+              <div className="bg-black text-white p-4 sm:p-6 text-center flex-shrink-0">
+                <h3 className="text-lg sm:text-2xl font-bold mb-2 leading-tight">{pkg.name} <br /> Package</h3>
+                <div className="text-2xl sm:text-3xl font-bold">
                   {pkg.price}
-                  <span className="text-sm font-bold"> /USD</span>
+                  <span className="text-xs sm:text-sm font-bold"> /USD</span>
                 </div>
               </div>
 
               {/* Package Features */}
-              <div className="p-6 flex-1 flex flex-col">
-                <div className={`mb-6 flex-1 overflow-y-auto max-h-64 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200`}>
-                  <ul className="space-y-3">
+              <div className="p-4 sm:p-6 flex-1 flex flex-col">
+                <div className={`mb-4 sm:mb-6 flex-1 overflow-y-auto max-h-56 sm:max-h-64 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200`}>
+                  <ul className="space-y-2 sm:space-y-3">
                     {pkg.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-2">
-                        <FontAwesomeIcon icon={faCircleCheck} className='text-red-500 mt-1 flex-shrink-0' />
-                        <span className="text-gray-600 text-md leading-relaxed">
+                        <FontAwesomeIcon icon={faCircleCheck} className='text-red-500 mt-1 flex-shrink-0 text-sm' />
+                        <span className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                           {feature}
                         </span>
                       </li>
@@ -516,14 +518,14 @@ export default function PricingPackages() {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex gap-3 flex-shrink-0">
-                  <Link href={`/order/${pkg.name}`}>
-                    <button className="flex-1 bg-black text-white py-3 px-4 rounded font-medium hover:bg-red-500 hover:text-black transition-colors">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 flex-shrink-0">
+                  <Link href={`/order/${pkg.name}`} className="w-full sm:flex-1">
+                    <button className="w-full bg-black text-white py-2 sm:py-3 px-3 sm:px-4 rounded font-medium text-sm sm:text-base hover:bg-red-500 hover:text-black transition-colors">
                       Order Now
                     </button>
                   </Link>
-                  <Link href="/live-chat">
-                    <button className="flex-1 bg-black text-white py-3 px-4 rounded font-medium hover:bg-red-500 hover:text-black transition-colors">
+                  <Link href="/live-chat" className="w-full sm:flex-1">
+                    <button className="w-full bg-black text-white py-2 sm:py-3 px-3 sm:px-4 rounded font-medium text-sm sm:text-base hover:bg-red-500 hover:text-black transition-colors">
                       Live Chat
                     </button>
                   </Link>
@@ -535,15 +537,15 @@ export default function PricingPackages() {
       </div>
 
       {/* CTA Section */}
-      <div className="text-center mt-16 px-4">
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/get-a-quote">
-              <button className="bg-black text-white px-8 py-3 rounded font-medium hover:bg-red-500 hover:text-black transition-all duration-500 transform hover:scale-105 animate-pulse">
+      <div className="text-center mt-12 sm:mt-16 px-4">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
+          <Link href="/get-a-quote" className="w-full sm:w-auto">
+              <button className="w-full sm:w-auto bg-black text-white px-6 sm:px-8 py-3 rounded font-medium text-sm sm:text-base hover:bg-red-500 hover:text-black transition-all duration-500 transform hover:scale-105 animate-pulse">
                   Let's Get Started
               </button>
           </Link>
-          <Link href="tel:+18009614590">
-              <button className="border border-black text-black px-8 py-3 rounded font-medium hover:bg-white hover:text-red-500 hover:border-red-500 transition-colors">
+          <Link href="tel:+18009614590" className="w-full sm:w-auto">
+              <button className="w-full sm:w-auto border border-black text-black px-6 sm:px-8 py-3 rounded font-medium text-sm sm:text-base hover:bg-white hover:text-red-500 hover:border-red-500 transition-colors">
                   +1 (800) 961-4590
               </button>
           </Link>

@@ -53,35 +53,35 @@ export default function Industries() {
   ];
 
   return (
-    <div className="bg-black py-16 px-4">
+    <div className="bg-black py-8 sm:py-12 md:py-16 px-2 sm:px-4">
       {/* Header Section */}
-      <div className="text-center mb-16 max-w-4xl mx-auto">
-        <h1 className="text-white text-4xl lg:text-2xl font-medium mb-4 tracking-wider">
+      <div className="text-center mb-8 sm:mb-12 md:mb-16 max-w-4xl mx-auto px-2">
+        <h1 className="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl font-medium mb-2 sm:mb-4 tracking-wider">
           SERVING FORTUNE 500 COMPANIES
         </h1>
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight">
           Belonging to 40+ Industries!
         </h2>
       </div>
 
       {/* Industries Grid */}
       <div className="max-w-8xl mx-auto">
-        <div className="grid grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 sm:gap-4 md:gap-6">
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="group flex flex-row items-center justify-center p-4 transition-all duration-300 hover:scale-105 cursor-pointer"
+              className="group flex flex-col sm:flex-row items-center justify-center p-2 sm:p-3 md:p-4 transition-all duration-300 hover:scale-105 cursor-pointer bg-gray-900/20 sm:bg-transparent rounded-lg sm:rounded-none"
             >
-              <div className="w-12 h-12 mb-3 flex items-center justify-center duration-300">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mb-2 sm:mb-3 md:mb-3 flex items-center justify-center duration-300">
                 <Image 
                   src={`/assets/${industry.image}`}
                   alt={industry.name}
                   width={48}
                   height={48}
-                  className="object-contain invert group-hover:brightness-100 group-hover:invert-0 group-hover:hue-rotate-[350deg] group-hover:saturate-150 transition-all duration-300"
+                  className="object-contain invert group-hover:brightness-100 group-hover:invert-0 group-hover:hue-rotate-[350deg] group-hover:saturate-150 transition-all duration-300 w-full h-full"
                 />
               </div>
-              <h3 className="text-white pl-2 text-xs font-medium text-center leading-tight group-hover:text-red-500 transition-colors duration-300">
+              <h3 className="text-white sm:pl-2 text-xs sm:text-xs md:text-xs font-medium text-center sm:text-left leading-tight group-hover:text-red-500 transition-colors duration-300">
                 {industry.name}
               </h3>
             </div>

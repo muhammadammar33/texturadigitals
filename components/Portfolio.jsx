@@ -137,17 +137,17 @@ export default function Portfolio() {
     };
 
     return (
-        <div className="text-white pb-16 min-h-screen">
-            <div className="bg-black pt-16 pb-32">
+        <div className="text-white pb-8 sm:pb-16 min-h-screen">
+            <div className="bg-black pt-8 sm:pt-16 pb-16 sm:pb-32">
                 {/* Header Section */}
-                <div className="text-center mb-8 px-4">
-                    <h1 className="text-3xl lg:text-2xl font-bold mb-4">
+                <div className="text-center mb-6 sm:mb-8 px-4">
+                    <h1 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-4 leading-tight">
                     Textura Digitals – The Logical Web Design and Development Company
                     </h1>
-                    <h2 className="text-4xl lg:text-4xl font-bold mb-8">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-8 leading-tight">
                     A Glimpse of our Stunning Portfolio!
                     </h2>
-                    <p className="text-gray-300 text-sm max-w-4xl mx-auto leading-relaxed">
+                    <p className="text-gray-300 text-xs sm:text-sm max-w-4xl mx-auto leading-relaxed px-2">
                     The logo is your business face and should express your company's brand identity, values, and everything in between. At Textura 
                     Digitals, we create enchanting business logo designs that reflect your business identity and make sure it communicates the right 
                     message to your customers.
@@ -155,30 +155,32 @@ export default function Portfolio() {
                 </div>
 
                 {/* Category Navigation */}
-                <div className="flex flex-wrap justify-center gap-1 mb-4 px-8">
-                    {categories.map((category) => (
-                    <button
-                        key={category}
-                        onClick={() => setActiveCategory(category)}
-                        className={`px-4 py-2 text-sm font-medium transition-all duration-300 ${
-                        activeCategory === category
-                            ? "text-white border-b-2 border-white"
-                            : "text-gray-400 hover:text-white"
-                        }`}
-                    >
-                        {category}
-                    </button>
-                    ))}
+                <div className="overflow-x-auto pb-2 mb-4 px-2 sm:px-8">
+                    <div className="flex gap-1 min-w-max sm:flex-wrap sm:justify-center sm:min-w-0">
+                        {categories.map((category) => (
+                        <button
+                            key={category}
+                            onClick={() => setActiveCategory(category)}
+                            className={`px-2 sm:px-4 py-2 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap ${
+                            activeCategory === category
+                                ? "text-white border-b-2 border-white"
+                                : "text-gray-400 hover:text-white"
+                            }`}
+                        >
+                            {category}
+                        </button>
+                        ))}
+                    </div>
                 </div>
         </div>
 
         {/* Portfolio Grid */}
-        <div className="max-w-9/10 mx-auto px-4 mt-[-100px]">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 justify-center">
+        <div className="max-w-9/10 mx-auto px-2 sm:px-4 mt-[-60px] sm:mt-[-100px]">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 justify-center">
             {portfolioData[activeCategory]?.map((item, index) => (
                 <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg bg-gray-800 aspect-square hover:scale-110 transition-transform duration-1000"
+                className="group relative overflow-hidden rounded-lg bg-gray-800 aspect-square hover:scale-105 sm:hover:scale-110 transition-transform duration-500 sm:duration-1000"
                 >
                 <Image
                     src={item.src}
@@ -193,15 +195,15 @@ export default function Portfolio() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16 px-4">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/get-a-quote">
-                <button className="bg-black text-white px-8 py-3 rounded font-medium hover:bg-red-500 hover:text-black transition-all duration-500 transform hover:scale-105 animate-pulse">
+        <div className="text-center mt-8 sm:mt-16 px-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
+            <Link href="/get-a-quote" className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto bg-black text-white px-6 sm:px-8 py-3 rounded font-medium text-sm sm:text-base hover:bg-red-500 hover:text-black transition-all duration-500 transform hover:scale-105 animate-pulse">
                     Let's Get Started
                 </button>
             </Link>
-            <Link href="tel:+18009614590">
-                <button className="border border-black text-black px-8 py-3 rounded font-medium hover:bg-white hover:text-red-500 hover:border-red-500 transition-colors">
+            <Link href="tel:+18009614590" className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto border border-black text-black px-6 sm:px-8 py-3 rounded font-medium text-sm sm:text-base hover:bg-white hover:text-red-500 hover:border-red-500 transition-colors">
                     +1 (800) 961-4590
                 </button>
             </Link>
