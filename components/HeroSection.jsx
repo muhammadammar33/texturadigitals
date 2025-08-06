@@ -45,7 +45,7 @@ export default function HeroSection() {
 
             {/* Description */}
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-xl">
-              <p className="text-base sm:text-sm text-gray-200 leading-relaxed">
+              <p className="text-base sm:text-xs text-gray-200 leading-relaxed">
                 At QureLogix, we are passionate about delivering high-quality,
                 innovative solutions that help businesses grow. Whether you need graphic
                 design, illustration design, marketing strategies, or app design &
@@ -56,8 +56,8 @@ export default function HeroSection() {
 
             {/* Features List */}
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <ul className="space-y-3 sm:space-y-4 text-sm sm:text-sm">
-                <li className="flex items-center justify-center lg:justify-start gap-3 text-gray-200 hover:text-white transition-colors duration-300">
+              <ul className="space-y-3 sm:space-y-4 text-sm sm:text-xs">
+                <li className="flex items-center justify-start gap-3 text-gray-200 hover:text-white transition-colors duration-300">
                   <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-1">
                     <FontAwesomeIcon icon={faCircleCheck} className='text-white text-sm' />
                   </div>

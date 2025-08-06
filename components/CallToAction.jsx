@@ -52,7 +52,7 @@ export default function CallToAction() {
               {/* Benefits List */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center space-x-3 justify-center lg:justify-start">
+                  <div key={index} className="flex items-center space-x-3 justify-start">
                     <FontAwesomeIcon icon={faCheck} className="text-green-400 text-sm flex-shrink-0" />
                     <span className="text-gray-300 text-xs sm:text-sm">{benefit}</span>
                   </div>

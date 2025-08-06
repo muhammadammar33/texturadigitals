@@ -37,7 +37,7 @@ export default function Header() {
             src={isScrolled ? "/assets/Qurelogix-light.png" : "/assets/Qurelogix.png"}
             alt="QureLogix"
             width={100}
-            height={64}
+            height={32}
             className="h-8 w-auto sm:h-10"
           />
         </div>
