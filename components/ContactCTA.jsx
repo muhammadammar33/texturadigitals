@@ -25,7 +25,7 @@ export default function ContactCTA() {
         <div
           className={`${
             isScrolled ? "bg-black" : "bg-gray-600/30"
-          } text-red-600 rounded-l-full cursor-pointer shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 flex items-center overflow-hidden w-10 md:w-12 group-hover:w-32 md:group-hover:w-52 transition-all duration-300 ease-out`}
+          } text-blue-600 rounded-l-full cursor-pointer shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 flex items-center overflow-hidden w-10 md:w-12 group-hover:w-32 md:group-hover:w-52 transition-all duration-300 ease-out`}
         >
           <div className="flex items-center gap-2 md:gap-3 px-2 md:px-3 py-2 md:py-3 whitespace-nowrap">
             <FontAwesomeIcon
@@ -33,7 +33,7 @@ export default function ContactCTA() {
               size="sm"
               className="md:text-lg hover:scale-105 transition-transform"
             />
-            <span className="text-red-600 pl-1 md:pl-2 border-l border-gray-200 font-medium text-xs md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+            <span className="text-blue-600 pl-1 md:pl-2 border-l border-gray-200 font-medium text-xs md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
               Chat With Us
             </span>
           </div>
@@ -45,7 +45,7 @@ export default function ContactCTA() {
         <div
           className={`${
             isScrolled ? "bg-black" : "bg-gray-600/30"
-          } text-red-600 rounded-l-full cursor-pointer shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 flex items-center overflow-hidden w-10 md:w-12 group-hover:w-32 md:group-hover:w-52 transition-all duration-300 ease-out`}
+          } text-blue-600 rounded-l-full cursor-pointer shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 flex items-center overflow-hidden w-10 md:w-12 group-hover:w-32 md:group-hover:w-52 transition-all duration-300 ease-out`}
         >
           <div className="flex items-center gap-2 md:gap-3 px-2 md:px-3 py-2 md:py-3 whitespace-nowrap">
             <FontAwesomeIcon
@@ -54,7 +54,7 @@ export default function ContactCTA() {
               className="md:text-lg hover:scale-105 transition-transform"
             />
             <Link href="tel:+16282564002">
-              <span className="text-red-600 pl-1 md:pl-2 border-l border-gray-200 font-medium text-xs md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+              <span className="text-blue-600 pl-1 md:pl-2 border-l border-gray-200 font-medium text-xs md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                 +1-628-256-4002
               </span> 
             </Link>
@@ -68,7 +68,7 @@ export default function ContactCTA() {
           isScrolled ? "bg-black" : "bg-gray-600/30"
         } rounded-l-2xl flex items-center justify-center shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 hover:shadow-lg transition-all`}
       >
-        <span className="text-red-600 font-bold rotate-[-90deg] whitespace-nowrap text-xs md:text-sm">
+        <span className="text-blue-600 font-bold rotate-[-90deg] whitespace-nowrap text-xs md:text-sm">
           50% OFF ON ALL SERVICES
         </span>
       </div>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft, faChevronRight, faQuoteLeft, faStar } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export default function Testimonials() {
@@ -114,8 +114,18 @@ export default function Testimonials() {
     changeSlide((currentSlide - 1 + testimonials.length) % testimonials.length);
   };
 
+  const renderStars = (rating) => {
+    return Array.from({ length: 5 }, (_, index) => (
+      <FontAwesomeIcon
+        key={index}
+        icon={faStar}
+        className={`text-sm ${index < rating ? 'text-yellow-500' : 'text-gray-300'}`}
+      />
+    ));
+  };
+
   return (
-    <div className="bg-gray-100 py-16 px-4">
+    <div className="bg-blue-300 py-16 px-4">
       {/* Header Section */}
       <div className="text-center mb-16 max-w-6xl mx-auto">
         <h1 className="text-4xl lg:text-4xl font-bold text-black mb-8">
@@ -215,6 +225,34 @@ export default function Testimonials() {
               </button>
             ))}
           </div>
+      </div>
+
+      {/* Trust Badges */}
+      <div className="mt-12 sm:mt-16">
+        <p className="text-center text-gray-500 text-xs sm:text-sm mb-6">Trusted by 500+ businesses worldwide</p>
+        <div className="flex justify-center items-center space-x-4 sm:space-x-8 opacity-60">
+          <Image
+            src="/assets/bookPublishing/t-updated.png"
+            alt="Trustpilot"
+            width={80}
+            height={30}
+            className="h-6 sm:h-8 w-auto"
+          />
+          <Image
+            src="/assets/bookPublishing/clutch.png"
+            alt="Clutch"
+            width={80}
+            height={30}
+            className="h-6 sm:h-8 w-auto"
+          />
+          <Image
+            src="/assets/bookPublishing/gpartner.png"
+            alt="Google Partner"
+            width={80}
+            height={30}
+            className="h-6 sm:h-8 w-auto"
+          />
+        </div>
       </div>
     </div>
   );

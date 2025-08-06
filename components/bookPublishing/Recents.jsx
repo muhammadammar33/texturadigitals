@@ -54,10 +54,10 @@ export default function Recents() {
         {/* CTA Section */}
         <div className="text-center mt-16 px-4">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-black text-white px-8 py-3 rounded font-medium hover:bg-red-500 hover:text-black transition-all duration-500 transform hover:scale-105 animate-pulse">
+            <button className="bg-black text-white px-8 py-3 rounded font-medium hover:bg-blue-500 hover:text-black transition-all duration-500 transform hover:scale-105 animate-pulse">
                 Let's Get Started
             </button>
-            <button className="border border-black text-black px-8 py-3 rounded font-medium hover:bg-white hover:text-red-500 hover:border-red-500 transition-colors">
+            <button className="border border-black text-black px-8 py-3 rounded font-medium hover:bg-white hover:text-blue-500 hover:border-blue-500 transition-colors">
                 +1 (800) 961-4590
             </button>
             </div>

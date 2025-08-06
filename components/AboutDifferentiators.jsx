@@ -22,10 +22,10 @@ export default function AboutDifferentiators() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center lg:justify-start">
-              <button className="w-full sm:w-auto bg-black text-white px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:bg-red-500 hover:text-black transition-colors">
+              <button className="w-full sm:w-auto bg-black text-white px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:bg-blue-500 hover:text-black transition-colors">
                 Get A Free Consultation
               </button>
-              <button className="w-full sm:w-auto border border-black text-black px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:border-red-500 hover:text-red-500 transition-colors">
+              <button className="w-full sm:w-auto border border-black text-black px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:border-blue-500 hover:text-blue-500 transition-colors">
                 +1-628-256-4002
               </button>
             </div>
@@ -72,10 +72,10 @@ export default function AboutDifferentiators() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center lg:justify-start">
-              <button className="w-full sm:w-auto bg-black text-white px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:bg-red-500 hover:text-black transition-colors">
+              <button className="w-full sm:w-auto bg-black text-white px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:bg-blue-500 hover:text-black transition-colors">
                 Get A Free Consultation
               </button>
-              <button className="w-full sm:w-auto border border-black text-black px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:border-red-500 hover:text-red-500 transition-colors">
+              <button className="w-full sm:w-auto border border-black text-black px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:border-blue-500 hover:text-blue-500 transition-colors">
                 +1-628-256-4002
               </button>
             </div>
@@ -98,10 +98,10 @@ export default function AboutDifferentiators() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center lg:justify-start">
-              <button className="w-full sm:w-auto bg-black text-white px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:bg-red-500 hover:text-black transition-colors">
+              <button className="w-full sm:w-auto bg-black text-white px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:bg-blue-500 hover:text-black transition-colors">
                 Get A Free Consultation
               </button>
-              <button className="w-full sm:w-auto border border-black text-black px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:border-red-500 hover:text-red-500 transition-colors">
+              <button className="w-full sm:w-auto border border-black text-black px-4 sm:px-6 py-3 rounded text-xs sm:text-sm font-medium hover:border-blue-500 hover:text-blue-500 transition-colors">
                 +1-628-256-4002
               </button>
             </div>

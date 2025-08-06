@@ -36,7 +36,7 @@ export default function Footer() {
 
           {/* Our Services */}
           <div>
-            <h3 className="text-red-500 font-bold text-sm sm:text-md mb-4 sm:mb-6">Our Services</h3>
+            <h3 className="text-blue-500 font-bold text-sm sm:text-md mb-4 sm:mb-6">Our Services</h3>
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
               <li><a href="/book-publishing" className="text-gray-300 hover:text-white transition-colors">BOOK PUBLISHING</a></li>
               <li><a href="/graphic-design" className="text-gray-300 hover:text-white transition-colors">GRAPHIC DESIGN</a></li>
@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-red-500 font-bold text-sm sm:text-md mb-4 sm:mb-6">Company</h3>
+            <h3 className="text-blue-500 font-bold text-sm sm:text-md mb-4 sm:mb-6">Company</h3>
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
               <li><a href="/about" className="text-gray-300 hover:text-white transition-colors">About</a></li>
               <li><a href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
@@ -61,14 +61,14 @@ export default function Footer() {
 
           {/* US Office */}
           <div className="sm:col-span-2 md:col-span-1">
-            <h3 className="text-red-500 font-bold text-sm sm:text-md mb-4 sm:mb-6">US Office</h3>
+            <h3 className="text-blue-500 font-bold text-sm sm:text-md mb-4 sm:mb-6">US Office</h3>
             <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm">
               <p className="text-gray-300">
                 100 Pine St Suite 1150-<br />
                 1151 , San Francisco, CA<br />
                 94111
               </p>
-              <p className="text-red-500 font-bold text-base sm:text-lg">+1-628-256-4002</p>
+              <p className="text-blue-500 font-bold text-base sm:text-lg">+1-628-256-4002</p>
               
               {/* Social Media Icons */}
               <div className="flex space-x-3 mt-4 sm:mt-6">

@@ -139,7 +139,7 @@ export default function AppHero() {
                   className="w-24 h-24 md:w-32 md:h-32"
                 />
               </div>
-              <div className="bg-red-500/40 p-8 rounded-lg border border-red-500 shadow-2xl max-w-md w-full">
+              <div className="bg-blue-500/40 p-8 rounded-lg border border-blue-500 shadow-2xl max-w-md w-full">
                 <h2 className="text-2xl font-bold text-white mb-2">
                   Sign-up to Avail
                 </h2>
@@ -187,7 +187,7 @@ export default function AppHero() {
 
                   <button
                     type="submit"
-                    className="w-full bg-red-500 hover:bg-red-400 text-white font-semibold py-3 px-6 rounded transition-colors flex items-center justify-center space-x-2"
+                    className="w-full bg-blue-500 hover:bg-blue-400 text-white font-semibold py-3 px-6 rounded transition-colors flex items-center justify-center space-x-2"
                   >
                     <span>Submit</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

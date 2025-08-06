@@ -17,11 +17,11 @@ export default function HeroSection() {
           <div className="space-y-4 lg:space-y-6 text-center lg:text-left order-2 lg:order-1">
             <h1 className="text-2xl sm:text-3xl lg:text-3xl font-bold leading-tight text-white">
               Welcome to{" "}
-              <span className="text-red-500">Textura Digitals</span>
+              <span className="text-blue-500">Textura Digitals</span>
               <br />
               Empowering Your Brand with
               <br />
-              <span className="text-red-500">Creative Solutions</span>
+              <span className="text-blue-500">Creative Solutions</span>
             </h1>
 
             <p className="text-sm sm:text-base text-shadow-md text-gray-300 leading-relaxed">
@@ -34,23 +34,23 @@ export default function HeroSection() {
 
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-white">
               <li className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3">
-                <FontAwesomeIcon icon={faCircleCheck} className='text-red-500 text-sm sm:text-base' />
+                <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 text-sm sm:text-base' />
                 <span>Custom logo design tailored to your business</span>
               </li>
               <li className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3">
-                <FontAwesomeIcon icon={faCircleCheck} className='text-red-500 text-sm sm:text-base' />
+                <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 text-sm sm:text-base' />
                 <span>Professional and experienced design team</span>
               </li>
               <li className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3">
-                <FontAwesomeIcon icon={faCircleCheck} className='text-red-500 text-sm sm:text-base' />
+                <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 text-sm sm:text-base' />
                 <span>Strategic approach to brand identity</span>
               </li>
               <li className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3">
-                <FontAwesomeIcon icon={faCircleCheck} className='text-red-500 text-sm sm:text-base' />
+                <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 text-sm sm:text-base' />
                 <span>Affordable pricing without sacrificing quality</span>
               </li>
               <li className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3">
-                <FontAwesomeIcon icon={faCircleCheck} className='text-red-500 text-sm sm:text-base' />
+                <FontAwesomeIcon icon={faCircleCheck} className='text-blue-500 text-sm sm:text-base' />
                 <span>100% satisfaction guarantee</span>
               </li>
             </ul>

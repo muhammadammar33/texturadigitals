@@ -37,7 +37,7 @@ export default function BrandingSolution() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Logo Design */}
             <div className="bg-white p-4 rounded-lg shadow-sm">
-              <h3 className="text-red-500 font-bold text-base mb-3">LOGO DESIGN</h3>
+              <h3 className="text-blue-500 font-bold text-base mb-3">LOGO DESIGN</h3>
               <ul className="text-gray-600 space-y-1 text-xs">
                 <li>Unlimited Concepts</li>
                 <li>Unlimited Revisions</li>
@@ -48,7 +48,7 @@ export default function BrandingSolution() {
 
             {/* Stationery Design */}
             <div className="bg-white p-4 rounded-lg shadow-sm">
-              <h3 className="text-red-500 font-bold text-base mb-3">STATIONERY DESIGN</h3>
+              <h3 className="text-blue-500 font-bold text-base mb-3">STATIONERY DESIGN</h3>
               <ul className="text-gray-600 space-y-1 text-xs">
                 <li>Business Card Design</li>
                 <li>Letterhead Design</li>
@@ -59,7 +59,7 @@ export default function BrandingSolution() {
 
             {/* Web Design */}
             <div className="bg-white p-4 rounded-lg shadow-sm">
-              <h3 className="text-red-500 font-bold text-base mb-3">WEB DESIGN</h3>
+              <h3 className="text-blue-500 font-bold text-base mb-3">WEB DESIGN</h3>
               <ul className="text-gray-600 space-y-1 text-xs">
                 <li>10 Web Pages</li>
                 <li>Unlimited Revisions</li>
@@ -72,7 +72,7 @@ export default function BrandingSolution() {
 
             {/* Banner Design */}
             <div className="bg-white p-4 rounded-lg shadow-sm">
-              <h3 className="text-red-500 font-bold text-base mb-3">BANNER DESIGN</h3>
+              <h3 className="text-blue-500 font-bold text-base mb-3">BANNER DESIGN</h3>
               <ul className="text-gray-600 space-y-1 text-xs">
                 <li>2 Design Concepts</li>
                 <li>Free Grayscale Format</li>
@@ -82,7 +82,7 @@ export default function BrandingSolution() {
 
             {/* Social Media Design */}
             <div className="bg-white p-4 rounded-lg shadow-sm sm:col-span-2">
-              <h3 className="text-red-500 font-bold text-base mb-3">SOCIAL MEDIA DESIGN</h3>
+              <h3 className="text-blue-500 font-bold text-base mb-3">SOCIAL MEDIA DESIGN</h3>
               <ul className="text-gray-600 space-y-1 text-xs">
                 <li>Any 3 of Your Choice</li>
                 <li>(Facebook, LinkedIn, Twitter, YouTube)</li>
@@ -98,7 +98,7 @@ export default function BrandingSolution() {
             <div className="absolute left-0 top-1/2 transform -translate-y-1/2 space-y-8">
               {/* Logo Design */}
               <div className="text-right pr-8">
-                <h3 className="text-red-500 font-bold text-lg mb-2">LOGO DESIGN</h3>
+                <h3 className="text-blue-500 font-bold text-lg mb-2">LOGO DESIGN</h3>
                 <ul className="text-gray-600 space-y-1 text-sm">
                   <li>Unlimited Concepts</li>
                   <li>Unlimited Revisions</li>
@@ -109,7 +109,7 @@ export default function BrandingSolution() {
 
               {/* Web Design */}
               <div className="text-right pr-8">
-                <h3 className="text-red-500 font-bold text-lg mb-2">WEB DESIGN</h3>
+                <h3 className="text-blue-500 font-bold text-lg mb-2">WEB DESIGN</h3>
                 <ul className="text-gray-600 space-y-1 text-sm">
                   <li>10 Web Pages</li>
                   <li>Unlimited Revisions</li>
@@ -136,7 +136,7 @@ export default function BrandingSolution() {
             <div className="absolute right-0 top-1/2 transform -translate-y-1/2 space-y-8">
               {/* Stationery Design */}
               <div className="text-left pl-8">
-                <h3 className="text-red-500 font-bold text-lg mb-2">STATIONERY DESIGN</h3>
+                <h3 className="text-blue-500 font-bold text-lg mb-2">STATIONERY DESIGN</h3>
                 <ul className="text-gray-600 space-y-1 text-sm">
                   <li>Business Card Design</li>
                   <li>Letterhead Design</li>
@@ -147,7 +147,7 @@ export default function BrandingSolution() {
 
               {/* Banner Design */}
               <div className="text-left pl-8">
-                <h3 className="text-red-500 font-bold text-lg mb-2">BANNER DESIGN</h3>
+                <h3 className="text-blue-500 font-bold text-lg mb-2">BANNER DESIGN</h3>
                 <ul className="text-gray-600 space-y-1 text-sm">
                   <li>2 Design Concepts</li>
                   <li>Free Grayscale Format</li>
@@ -157,7 +157,7 @@ export default function BrandingSolution() {
 
               {/* Social Media Design */}
               <div className="text-left pl-8">
-                <h3 className="text-red-500 font-bold text-lg mb-2">SOCIAL MEDIA DESIGN</h3>
+                <h3 className="text-blue-500 font-bold text-lg mb-2">SOCIAL MEDIA DESIGN</h3>
                 <ul className="text-gray-600 space-y-1 text-sm">
                   <li>Any 3 of Your Choice</li>
                   <li>(Facebook, LinkedIn, Twitter, YouTube)</li>
@@ -170,7 +170,7 @@ export default function BrandingSolution() {
         {/* Order Button */}
         <div className="text-center mt-8 sm:mt-16">
           <Link href={`/order-sequence`}>
-            <button className="w-full sm:w-auto bg-black text-white py-3 sm:py-4 px-6 sm:px-8 rounded font-medium hover:bg-red-500 hover:text-black transition-colors text-sm sm:text-base">
+            <button className="w-full sm:w-auto bg-black text-white py-3 sm:py-4 px-6 sm:px-8 rounded font-medium hover:bg-blue-500 hover:text-black transition-colors text-sm sm:text-base">
               Order Now
             </button>
           </Link>
@@ -179,7 +179,7 @@ export default function BrandingSolution() {
         {/* Contact Information */}
         <div className="text-center mt-6 sm:mt-8 px-4">
           <p className="text-gray-600 text-xs sm:text-sm">
-            CLICK HERE TO <span className="text-red-500 font-bold">CHAT</span> | CALL <span className="text-red-500 font-bold">+1-628-256-4002</span>
+            CLICK HERE TO <span className="text-blue-500 font-bold">CHAT</span> | CALL <span className="text-blue-500 font-bold">+1-628-256-4002</span>
           </p>
         </div>
       </div>

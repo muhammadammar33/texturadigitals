@@ -12,6 +12,8 @@ import Awards from "../components/Awards";
 import Industries from "../components/Industries";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
+import CallToAction from "../components/CallToAction";
+import FAQ from "../components/FAQ";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       <Header />
       <ServicesMenu />
       <HeroSection />
+      <CallToAction />
+      <FAQ />
       <ContactCTA />
       <CarousalPage />
       <Portfolio />

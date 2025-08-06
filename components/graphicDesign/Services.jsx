@@ -116,10 +116,10 @@ export default function BookLaunchSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="bg-black text-white px-8 py-4 rounded-sm font-semibold hover:bg-red-500 transition-colors">
+              <button className="bg-black text-white px-8 py-4 rounded-sm font-semibold hover:bg-blue-500 transition-colors">
                 Let's Get Started
               </button>
-              <button className="border-2 border-black text-black px-8 py-4 rounded-sm font-semibold hover:text-red-500 hover:border-red-500 transition-colors">
+              <button className="border-2 border-black text-black px-8 py-4 rounded-sm font-semibold hover:text-blue-500 hover:border-blue-500 transition-colors">
                 +1-628-256-4002
               </button>
             </div>
