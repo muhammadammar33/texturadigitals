@@ -455,7 +455,7 @@ export default function PricingPackages() {
     };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50 py-12 sm:py-16 md:py-20 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50 py-8 sm:py-12 md:py-16 lg:py-20 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -470,7 +470,7 @@ export default function PricingPackages() {
 
       <div className="relative z-10">
         {/* Header Section */}
-        <div className="text-center mb-12 sm:mb-16 px-4">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16 px-4">
           {/* Badge */}
           <div className="inline-block mb-6">
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-medium shadow-lg">
@@ -508,30 +508,52 @@ export default function PricingPackages() {
           </div>
         </div>
 
-        {/* Category Navigation */}
-        <div className="overflow-x-auto pb-4 mb-12 sm:mb-16 px-4 sm:px-8">
-          <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-4 sm:p-6 border border-gray-200/50 shadow-2xl">
-            <div className="flex gap-2 sm:gap-4 min-w-max sm:flex-wrap sm:justify-center sm:min-w-0">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setActiveCategory(category)}
-                  className={`px-4 sm:px-6 py-3 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap rounded-xl transform hover:scale-105 ${
-                    activeCategory === category
-                      ? "text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg font-bold border-2 border-white/30"
-                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-100 border-2 border-transparent"
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
+        {/* Category Navigation - Mobile Optimized */}
+        <div className="mb-8 sm:mb-12 lg:mb-16 px-4">
+          <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-3 sm:p-4 lg:p-6 border border-gray-200/50 shadow-2xl">
+            {/* Mobile: Horizontal Scroll */}
+            <div className="block sm:hidden">
+              <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => setActiveCategory(category)}
+                    className={`px-3 py-2 text-xs font-medium transition-all duration-300 whitespace-nowrap rounded-lg flex-shrink-0 ${
+                      activeCategory === category
+                        ? "text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg font-bold"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-100 border border-gray-200"
+                    }`}
+                  >
+                    {category.replace(' ', '\n')}
+                  </button>
+                ))}
+              </div>
+            </div>
+            
+            {/* Tablet and Desktop: Grid Layout */}
+            <div className="hidden sm:block">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap lg:justify-center gap-2 lg:gap-4">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => setActiveCategory(category)}
+                    className={`px-3 sm:px-4 lg:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium transition-all duration-300 rounded-xl transform hover:scale-105 ${
+                      activeCategory === category
+                        ? "text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg font-bold border-2 border-white/30"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-100 border-2 border-transparent"
+                    }`}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Packages Grid */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+        {/* Packages Grid - Mobile Optimized */}
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {packageData[activeCategory]?.map((pkg, index) => {
               const isPopular = index === 1 || index === 4; // Make certain packages popular
               const isPremium = index === packageData[activeCategory].length - 1; // Last package is premium
@@ -539,7 +561,7 @@ export default function PricingPackages() {
               return (
                 <div
                   key={index}
-                  className={`group relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 h-[580px] flex flex-col w-full transform hover:scale-105 border-2 ${
+                  className={`group relative bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 h-auto min-h-[520px] sm:h-[580px] flex flex-col w-full transform hover:scale-105 border-2 ${
                     isPopular 
                       ? 'border-gradient-to-r from-blue-500 to-purple-500 shadow-blue-200/50' 
                       : isPremium 
@@ -552,15 +574,15 @@ export default function PricingPackages() {
                 >
                   {/* Popular/Premium Badge */}
                   {isPopular && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
-                      <span className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-1 rounded-full text-xs font-bold shadow-lg">
+                    <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-10">
+                      <span className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 sm:px-4 py-1 rounded-full text-xs font-bold shadow-lg">
                         🔥 POPULAR
                       </span>
                     </div>
                   )}
                   {isPremium && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
-                      <span className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-4 py-1 rounded-full text-xs font-bold shadow-lg">
+                    <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-10">
+                      <span className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-3 sm:px-4 py-1 rounded-full text-xs font-bold shadow-lg">
                         <FontAwesomeIcon icon={faCrown} className="mr-1" />
                         PREMIUM
                       </span>
@@ -577,21 +599,21 @@ export default function PricingPackages() {
                   } rounded-full blur-2xl`}></div>
 
                   {/* Package Header */}
-                  <div className={`p-6 text-center relative z-10 ${
+                  <div className={`p-4 sm:p-6 text-center relative z-10 ${
                     isPopular 
                       ? 'bg-gradient-to-r from-blue-600 to-purple-600' 
                       : isPremium 
                         ? 'bg-gradient-to-r from-purple-600 to-pink-600'
                         : 'bg-gradient-to-r from-gray-900 to-gray-800'
                   } text-white`}>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-3 leading-tight">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 leading-tight">
                       {pkg.name}
                       <br />
-                      <span className="text-sm font-normal opacity-90">Package</span>
+                      <span className="text-xs sm:text-sm font-normal opacity-90">Package</span>
                     </h3>
-                    <div className="text-3xl sm:text-4xl font-bold mb-2">
+                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">
                       {pkg.price}
-                      <span className="text-sm font-normal opacity-80"> /USD</span>
+                      <span className="text-xs sm:text-sm font-normal opacity-80"> /USD</span>
                     </div>
                     {isPopular && (
                       <div className="text-xs opacity-90">Most Popular Choice</div>
@@ -602,14 +624,14 @@ export default function PricingPackages() {
                   </div>
 
                   {/* Package Features */}
-                  <div className="p-6 flex-1 flex flex-col relative z-10">
-                    <div className="mb-6 flex-1 overflow-y-auto max-h-64 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
-                      <ul className="space-y-3">
+                  <div className="p-4 sm:p-6 flex-1 flex flex-col relative z-10">
+                    <div className="mb-4 sm:mb-6 flex-1 overflow-y-auto max-h-48 sm:max-h-64 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                      <ul className="space-y-2 sm:space-y-3">
                         {pkg.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-start gap-3 group-hover:translate-x-1 transition-transform duration-300" style={{transitionDelay: `${featureIndex * 50}ms`}}>
+                          <li key={featureIndex} className="flex items-start gap-2 sm:gap-3 group-hover:translate-x-1 transition-transform duration-300" style={{transitionDelay: `${featureIndex * 50}ms`}}>
                             <FontAwesomeIcon 
                               icon={faCircleCheck} 
-                              className={`mt-1 flex-shrink-0 text-sm ${
+                              className={`mt-0.5 sm:mt-1 flex-shrink-0 text-xs sm:text-sm ${
                                 isPopular 
                                   ? 'text-blue-500' 
                                   : isPremium 
@@ -617,7 +639,7 @@ export default function PricingPackages() {
                                     : 'text-green-500'
                               }`} 
                             />
-                            <span className="text-gray-700 text-sm leading-relaxed font-medium">
+                            <span className="text-gray-700 text-xs sm:text-sm leading-relaxed font-medium">
                               {feature}
                             </span>
                           </li>
@@ -626,9 +648,9 @@ export default function PricingPackages() {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="flex flex-col gap-3 flex-shrink-0">
+                    <div className="flex flex-col gap-2 sm:gap-3 flex-shrink-0">
                       <Link href={`/order/${pkg.name}`} className="w-full">
-                        <button className={`group w-full py-3 px-4 rounded-xl font-semibold text-sm transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2 ${
+                        <button className={`group w-full py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg sm:rounded-xl font-semibold text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2 ${
                           isPopular 
                             ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-500 hover:to-purple-500' 
                             : isPremium 
@@ -640,7 +662,7 @@ export default function PricingPackages() {
                         </button>
                       </Link>
                       <Link href="/live-chat" className="w-full">
-                        <button className={`w-full py-3 px-4 rounded-xl font-medium text-sm transition-all duration-300 transform hover:scale-105 border-2 ${
+                        <button className={`w-full py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg sm:rounded-xl font-medium text-xs sm:text-sm transition-all duration-300 transform hover:scale-105 border-2 ${
                           isPopular 
                             ? 'border-blue-500 text-blue-600 hover:bg-blue-50' 
                             : isPremium 
@@ -662,45 +684,45 @@ export default function PricingPackages() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16 sm:mt-20 px-4">
-          <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-8 sm:p-12 border border-gray-200/50 shadow-2xl max-w-4xl mx-auto">
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+        <div className="text-center mt-12 sm:mt-16 lg:mt-20 px-4">
+          <div className="bg-white/80 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 border border-gray-200/50 shadow-2xl max-w-4xl mx-auto">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
               Ready to Transform Your Brand?
             </h3>
-            <p className="text-gray-600 mb-8 text-sm sm:text-base">
+            <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
               Join thousands of satisfied clients who have elevated their business with our premium design packages.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center max-w-md sm:max-w-none mx-auto">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center max-w-md sm:max-w-none mx-auto">
               <Link href="/get-a-quote" className="w-full sm:w-auto">
-                <button className="group w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-sm sm:text-base hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3">
+                <button className="group w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-2 sm:gap-3">
                   Let's Get Started
                   <FontAwesomeIcon icon={faArrowRight} className="group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
               </Link>
               <Link href="tel:+18009614590" className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold text-sm sm:text-base hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                <button className="w-full sm:w-auto border-2 border-gray-300 text-gray-700 px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                   +1 (800) 961-4590
                 </button>
               </Link>
             </div>
 
             {/* Additional Trust Indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-8 mt-8 pt-6 border-t border-gray-200">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center items-center gap-4 sm:gap-8 mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-200">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">500+</div>
+                <div className="text-xl sm:text-2xl font-bold text-blue-600">500+</div>
                 <div className="text-xs text-gray-600">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-green-600">98%</div>
+                <div className="text-xl sm:text-2xl font-bold text-green-600">98%</div>
                 <div className="text-xs text-gray-600">Satisfaction Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600">24/7</div>
+                <div className="text-xl sm:text-2xl font-bold text-purple-600">24/7</div>
                 <div className="text-xs text-gray-600">Support</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-pink-600">1000+</div>
+                <div className="text-xl sm:text-2xl font-bold text-pink-600">1000+</div>
                 <div className="text-xs text-gray-600">Projects Done</div>
               </div>
             </div>
