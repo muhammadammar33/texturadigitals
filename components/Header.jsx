@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-4 py-4 sm:px-6 lg:px-12 xl:px-50 transition-all duration-300 ${
+      <header className={`fixed top-0 left-0 right-0 z-50 flex items-center px-4 py-4 sm:px-6 lg:px-12 xl:px-50 transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}>
         <div className="flex items-center">
@@ -47,28 +47,28 @@ export default function Header() {
           <nav className={`flex space-x-6 text-sm transition-colors duration-300 ${
             isScrolled ? 'text-black' : 'text-white'
           }`} style={{fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol'}}>
-            <a href="/" className="hover:text-blue-500 font-bold">
+            <a href="/" className="hover:text-red-500 font-bold">
               Home
             </a>
-            <a href="/about" className="hover:text-blue-500 font-bold">
+            <a href="/about" className="hover:text-red-500 font-bold">
               About Us
             </a>
-            <a href="/contact" className="hover:text-blue-500 font-bold">
+            <a href="/contact" className="hover:text-red-500 font-bold">
               Contact Us
             </a>
-            <a href="/pricing" className="hover:text-blue-500 font-bold">
+            <a href="/pricing" className="hover:text-red-500 font-bold">
               Pricing
             </a>
-            <a href="/portfolio" className="hover:text-blue-500 font-bold">
+            <a href="/portfolio" className="hover:text-red-500 font-bold">
               Portfolio
             </a>
-            <a href="tel:+1-628-256-4002" className="hover:text-blue-500 font-bold">
+            <a href="tel:+1-628-256-4002" className="hover:text-red-500 font-bold">
               📞+1-628-256-4002
             </a>
           </nav>
           <a href="/get-a-quote" className={`${
             isScrolled ? 'bg-black' : 'bg-gray-600/30'
-          } text-blue-500 px-6 py-3 rounded ml-6 text-sm transition-colors duration-300 inline-block`} style={{fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol'}}>
+          } text-red-500 px-6 py-3 rounded ml-6 text-sm transition-colors duration-300 inline-block`} style={{fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol'}}>
             Get A Quote
           </a>
         </div>
@@ -102,7 +102,7 @@ export default function Header() {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
           <div className="flex flex-col pt-20 px-6" style={{fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol'}}>
-            <a href="/" className="text-black hover:text-blue-500 font-bold text-lg py-4 border-b border-gray-200" onClick={toggleMobileMenu}>
+            <a href="/" className="text-black hover:text-red-500 font-bold text-lg py-4 border-b border-gray-200" onClick={toggleMobileMenu}>
               Home
             </a>
             
@@ -110,7 +110,7 @@ export default function Header() {
             <div className="border-b border-gray-200">
               <button 
                 onClick={toggleServices}
-                className="w-full text-left text-black hover:text-blue-500 font-bold text-lg py-4 flex justify-between items-center"
+                className="w-full text-left text-black hover:text-red-500 font-bold text-lg py-4 flex justify-between items-center"
               >
                 Services
                 <span className={`transform transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`}>
@@ -119,38 +119,38 @@ export default function Header() {
               </button>
               {isServicesOpen && (
                 <div className="bg-gray-50">
-                  <a href="/book-publishing" className="block text-gray-700 hover:text-blue-500 py-3 px-4 text-base border-b border-gray-100" onClick={toggleMobileMenu}>
+                  <a href="/book-publishing" className="block text-gray-700 hover:text-red-500 py-3 px-4 text-base border-b border-gray-100" onClick={toggleMobileMenu}>
                     BOOK PUBLISHING
                   </a>
-                  <a href="/graphic-design" className="block text-gray-700 hover:text-blue-500 py-3 px-4 text-base border-b border-gray-100" onClick={toggleMobileMenu}>
+                  <a href="/graphic-design" className="block text-gray-700 hover:text-red-500 py-3 px-4 text-base border-b border-gray-100" onClick={toggleMobileMenu}>
                     GRAPHIC DESIGN
                   </a>
-                  <a href="/website-development" className="block text-gray-700 hover:text-blue-500 py-3 px-4 text-base border-b border-gray-100" onClick={toggleMobileMenu}>
+                  <a href="/website-development" className="block text-gray-700 hover:text-red-500 py-3 px-4 text-base border-b border-gray-100" onClick={toggleMobileMenu}>
                     WEBSITE DEVELOPMENT
                   </a>
-                  <a href="/app-design-and-development" className="block text-gray-700 hover:text-blue-500 py-3 px-4 text-base border-b border-gray-100" onClick={toggleMobileMenu}>
+                  <a href="/app-design-and-development" className="block text-gray-700 hover:text-red-500 py-3 px-4 text-base border-b border-gray-100" onClick={toggleMobileMenu}>
                     APP DESIGN & DEVELOPMENT
                   </a>
-                  <a href="/marketing" className="block text-gray-700 hover:text-blue-500 py-3 px-4 text-base" onClick={toggleMobileMenu}>
+                  <a href="/marketing" className="block text-gray-700 hover:text-red-500 py-3 px-4 text-base" onClick={toggleMobileMenu}>
                     MARKETING
                   </a>
                 </div>
               )}
             </div>
 
-            <a href="/about" className="text-black hover:text-blue-500 font-bold text-lg py-4 border-b border-gray-200" onClick={toggleMobileMenu}>
+            <a href="/about" className="text-black hover:text-red-500 font-bold text-lg py-4 border-b border-gray-200" onClick={toggleMobileMenu}>
               About Us
             </a>
-            <a href="/contact" className="text-black hover:text-blue-500 font-bold text-lg py-4 border-b border-gray-200" onClick={toggleMobileMenu}>
+            <a href="/contact" className="text-black hover:text-red-500 font-bold text-lg py-4 border-b border-gray-200" onClick={toggleMobileMenu}>
               Contact Us
             </a>
-            <a href="/pricing" className="text-black hover:text-blue-500 font-bold text-lg py-4 border-b border-gray-200" onClick={toggleMobileMenu}>
+            <a href="/pricing" className="text-black hover:text-red-500 font-bold text-lg py-4 border-b border-gray-200" onClick={toggleMobileMenu}>
               Pricing
             </a>
-            <a href="/portfolio" className="text-black hover:text-blue-500 font-bold text-lg py-4 border-b border-gray-200" onClick={toggleMobileMenu}>
+            <a href="/portfolio" className="text-black hover:text-red-500 font-bold text-lg py-4 border-b border-gray-200" onClick={toggleMobileMenu}>
               Portfolio
             </a>
-            <a href="/get-a-quote" className="bg-black text-blue-500 px-6 py-3 rounded text-center font-bold mt-6 mb-4" onClick={toggleMobileMenu}>
+            <a href="/get-a-quote" className="bg-black text-red-500 px-6 py-3 rounded text-center font-bold mt-6 mb-4" onClick={toggleMobileMenu}>
               Get A Quote
             </a>
           </div>
