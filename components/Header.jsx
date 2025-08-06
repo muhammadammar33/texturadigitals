@@ -34,7 +34,7 @@ export default function Header() {
       }`}>
         <div className="flex items-center flex-shrink-0">
           <Image
-            src={isScrolled ? "/assets/Qurelogix-light.png" : "/assets/Qurelogix.png"}
+            src={isScrolled ? "/assets/QureLogix-light.png" : "/assets/Qurelogix.png"}
             alt="QureLogix"
             width={120}
             height={40}
@@ -77,7 +77,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button 
           onClick={toggleMobileMenu}
-          className={`lg:hidden flex flex-col justify-center items-center w-8 h-8 z-50 transition-colors duration-300 flex-shrink-0 ${
+          className={`lg:hidden flex flex-col justify-center right-[150px] items-center w-8 h-8 z-50 transition-colors duration-300 flex-shrink-0 ${
             isScrolled ? 'text-black' : 'text-white'
           }`}
           aria-label="Toggle mobile menu"
