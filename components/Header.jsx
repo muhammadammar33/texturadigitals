@@ -34,11 +34,15 @@ export default function Header() {
       }`}>
         <div className="flex items-center flex-shrink-0">
           <Image
-            src={isScrolled ? "/assets/Qurelogix-light.png" : "/assets/Qurelogix.png"}
+            src="/assets/Qurelogix.png"
             alt="QureLogix"
             width={120}
             height={40}
-            className="h-8 sm:h-10 lg:h-12 w-auto"
+            className={`h-8 sm:h-10 lg:h-12 w-auto transition-all duration-300 ${
+              isScrolled 
+                ? 'brightness-0 invert' // Makes the logo black when scrolled
+                : 'brightness-100' // Keeps original logo colors when not scrolled
+            }`}
             priority
           />
         </div>
@@ -77,7 +81,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button 
           onClick={toggleMobileMenu}
-          className={`lg:hidden flex flex-col justify-center items-center w-8 h-8 z-50 transition-colors duration-300 flex-shrink-0 ${
+          className={`lg:hidden flex flex-col right-[-150px] justify-center items-center w-8 h-8 z-50 transition-colors duration-300 flex-shrink-0 ${
             isScrolled ? 'text-black' : 'text-white'
           }`}
           aria-label="Toggle mobile menu"
