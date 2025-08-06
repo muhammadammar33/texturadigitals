@@ -38,7 +38,7 @@ export default function Header() {
             alt="QureLogix"
             width={100}
             height={32}
-            className="h-8 w-auto sm:h-10"
+            className="h-12 w-auto"
           />
         </div>
         
