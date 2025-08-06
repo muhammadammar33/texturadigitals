@@ -17,11 +17,11 @@ export default function PortfolioHero() {
             {/* Content */}
             <div className="relative z-10 max-w-6xl mx-auto text-center text-white">
             <h1 className="text-3xl lg:text-4xl font-bold mb-3 leading-tight">
-                Featured Work
+                Highlighted Projects
             </h1>
 
             <p className="text-sm lg:text-md max-w-5xl mx-auto leading-relaxed mb-4">
-                We have delivered exceptional digital service to our clients. At QureLogix our success lies in client’s satisfaction and delivering par excellence digital solutions.
+                We have provided outstanding digital services to our valued clients. At QureLogix, our achievement stems from client satisfaction and delivering superior digital solutions.
             </p>
             </div>
         </div>

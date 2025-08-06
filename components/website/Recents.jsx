@@ -24,10 +24,10 @@ export default function Recents() {
                 {/* Header Section */}
                 <div className="text-center mb-8 px-4">
                     <h2 className="text-4xl lg:text-4xl font-bold mb-4">
-                    A Glimpse of Our Professional Logo Portfolio
+                    Showcase of Our Premier Website Portfolio
                     </h2>
                     <p className="text-gray-300 text-sm max-w-4xl mx-auto leading-relaxed">
-                    At QureLogix, we proudly present our diverse portfolio of apps. From sleek and user-friendly designs to innovative and feature-rich functionality, our experienced developers have the skills and expertise to bring any app idea to life. Take a glimpse into our mobile app development portfolio and see the quality and creativity of our work for yourself.
+                    At QureLogix, we take pride in our comprehensive portfolio of web solutions. From elegant, intuitive designs to robust, feature-rich platforms, our skilled development team has the expertise to transform any digital vision into reality. Explore our website development portfolio and witness the caliber and innovation of our craftsmanship.
                     </p>
                 </div>
         </div>

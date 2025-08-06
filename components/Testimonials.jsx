@@ -22,55 +22,55 @@ export default function Testimonials() {
     {
       id: 2,
       quote: "Web Services To Attract Traffic",
-      text: "Working with QureLogix was amazing and they did a commendable job in revamping our website which was not very effective earlier. But now it is not only visually appealing but is also drawing a lot of traffic. I highly recommend QureLogix for their web service",
+      text: "Collaborating with QureLogix was exceptional and they delivered outstanding work in transforming our website which previously lacked effectiveness. Now it's not only visually captivating but also generating substantial traffic. I wholeheartedly endorse QureLogix for their web services",
       author: "Nathan Walker",
-      role: "Comedian & Actor",
+      role: "Business Owner",
       image: "/assets/testimonial.webp"
     },
     {
       id: 3,
-      quote: "The logo speaks volume",
-      text: "Provided an identity that has impressed all our customers. The logo speaks volume and have received numerous appreciations for it. The impact is profound and we are enjoying the success.",
+      quote: "The branding resonates powerfully",
+      text: "Delivered an identity that has captivated all our clients. The branding resonates powerfully and we've received countless compliments for it. The transformation is remarkable and we're celebrating this achievement.",
       author: "Ashly Vacanza",
       role: "CEO",
       image: "/assets/The-logo-speaks-volume.gif"
     },
     {
       id: 4,
-      quote: "Custimization and Affordability hand in hand",
-      text: "We have been highly satisfied with the QureLogix web service. They hit the nail. We are a startup company and we were looking for something customized, affordable and reliable and QureLogix ticked all the checkboxes",
+      quote: "Personalization and Value working together",
+      text: "We've been extremely pleased with QureLogix's web solutions. They exceeded expectations. As a growing company, we needed something personalized, budget-friendly and dependable - QureLogix delivered on every front",
       author: "Amber Alvarez",
       role: "CEO",
       image: "/assets/The-logo-speaks-volume.gif"
     },
     {
       id: 5,
-      quote: "Goal-Driven SEO",
-      text: "We already had a website but it was not SEO optimized and we were looking for the SEO service to expand our business visibility. Luckily working with QureLogix resolved our business hurdle and our website now ranks in the top result on google search.",
+      quote: "Results-Focused SEO Strategy",
+      text: "We had an existing website but it wasn't search-optimized and we needed SEO services to enhance our business visibility. Fortunately, partnering with QureLogix solved our business challenge and our website now appears in top search results.",
       author: "john Lecatelli",
       role: "CEO",
       image: "/assets/The-logo-speaks-volume.gif"
     },
     {
       id: 6,
-      quote: "Thumbs up!",
-      text: "I could have not done my website design without the Logo Design team, the team members are far professional and their work is up to the mark. Much a happy customer.",
+      quote: "Highly recommended!",
+      text: "Creating my website design wouldn't have been possible without the QureLogix team. The team members are incredibly professional and their work exceeds expectations. Extremely satisfied customer here.",
       author: "Hennry David",
       role: "Project Manager",
       image: "/assets/Thumbs-up.gif"
     },
     {
       id: 7,
-      quote: "100% recommended!",
-      text: "Their logo creation is simply the best service one can have. They have a variety of ideas and concepts to help you out with!",
+      quote: "Absolutely outstanding!",
+      text: "Their branding creation is simply the finest service available. They offer diverse ideas and concepts to support your vision!",
       author: "Desire Jordan",
       role: "COO",
       image: "/assets/100-recommended.gif"
     },
     {
       id: 8,
-      quote: "logodesign is not just looking for revenue",
-      text: "After a gazillion design options for my brand, a friend recommended Logo Design. My brand now looks the way I wanted it, thank you Team Logo Design.",
+      quote: "QureLogix prioritizes client success",
+      text: "After countless design iterations for my brand, a colleague suggested QureLogix. My brand now reflects exactly what I envisioned, thank you QureLogix Team.",
       author: "Brandan",
       role: "Associate Creative Director",
       image: "/assets/logodesign-is-not-just-looking-for-revenue.gif"

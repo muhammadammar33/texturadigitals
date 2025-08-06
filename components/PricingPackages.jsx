@@ -488,7 +488,7 @@ export default function PricingPackages() {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
           
           <p className="text-gray-600 text-sm sm:text-lg max-w-4xl mx-auto leading-relaxed px-2">
-            At QureLogix, we are proud to offer our customers customized professional logo design packages that meet the needs of every business. Check out our customized packages and choose the best that suits your needs!
+            At QureLogix, we take pride in delivering tailored professional design packages that cater to every business requirement. Explore our comprehensive packages and discover the perfect solution for your needs!
           </p>
 
           {/* Trust Indicators */}

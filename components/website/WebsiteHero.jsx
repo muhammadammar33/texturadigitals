@@ -46,11 +46,11 @@ export default function WebsiteHero() {
             {/* Left Content */}
             <div className="text-white">
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 leading-tight">
-                Transform Your Digital Presence with Professional Website Development
+                Elevate Your Online Presence with Cutting-Edge Website Development
               </h1>
               
               <p className="text-md md:text-shadow-md mb-3 leading-relaxed text-gray-200">
-                In today's fast-paced digital world, a powerful website is crucial to capturing your audience's attention and standing out from the competition. At QureLogix, we specialize in creating stunning, user-friendly websites that are not only visually appealing but also perform seamlessly across all devices.
+                In our interconnected digital landscape, having a powerful website is essential for capturing attention and distinguishing your brand from competitors. At QureLogix, we specialize in crafting exceptional, user-centric websites that are both visually stunning and functionally superior across all platforms.
               </p>
 
               {/* Features List */}
@@ -61,7 +61,7 @@ export default function WebsiteHero() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-gray-200 text-sm">Custom Web Development Solutions</p>
+                  <p className="text-gray-200 text-sm">Tailored Web Development Solutions</p>
                 </div>
                 
                 <div className="flex items-start p-0 m-0 space-x-3">
@@ -70,7 +70,7 @@ export default function WebsiteHero() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-gray-200 text-sm">Mobile-First Design</p>
+                  <p className="text-gray-200 text-sm">Responsive & Mobile-Optimized Design</p>
                 </div>
                 
                 <div className="flex items-start space-x-3 p-0 m-0">
@@ -79,14 +79,14 @@ export default function WebsiteHero() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-gray-200 text-sm">Speed & Performance</p>
+                  <p className="text-gray-200 text-sm">Lightning-Fast Performance & Security</p>
                 </div>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
                 <button className="bg-black text-sm border-black text-white px-4 py-2 font-semibold hover:bg-gray-800 rounded-sm transition-colors">
-                  Let's Get Started
+                  Start Your Project
                 </button>
                 <button className="border-2 border-white text-white px-4 py-2 font-semibold hover:bg-white hover:text-black rounded-sm transition-colors">
                   +1-628-256-4002

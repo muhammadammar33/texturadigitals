@@ -15,11 +15,11 @@ export default function WhyUs() {
             </p>
             
             <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6 leading-tight">
-              Dominate Your Market: Proven Advertising Techniques for Maximum Impact
+              Master Your Market: Strategic Advertising Approaches for Outstanding Results
             </h2>
             
             <p className="text-sm text-gray-700 mb-8 leading-relaxed">
-              Your company's success is not just about having a great product; it's about having powerful advertising that can capture the hearts and minds of your audience. And that's where QureLogix comes in - we have the talent and expertise to create art that truly captivates and drives purchasing decisions.
+              Your business success extends beyond having an excellent product; it requires compelling advertising that resonates with your audience's hearts and minds. This is where QureLogix excels - we possess the creativity and expertise to develop marketing materials that truly engage and influence buying decisions.
             </p>
             <p className="text-sm text-gray-700 mb-8 leading-relaxed">
               With our skillful and dedicated product advertising design services, we'll ensure your company gets the promotion it deserves. Because let's face it, without effective custom marketing materials, all the cash in the world won't drive the traction and success your company needs to thrive.

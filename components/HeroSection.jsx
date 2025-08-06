@@ -36,21 +36,21 @@ export default function HeroSection() {
                 QureLogix
               </span>
               <br />
-              <span className="text-white">Empowering Your Brand with</span>
+              <span className="text-white">Transforming Your Brand through</span>
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-                Creative Solutions
+                Innovative Solutions
               </span>
             </h1>
 
             {/* Description */}
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-xl">
               <p className="text-base sm:text-xs text-gray-200 leading-relaxed">
-                At QureLogix, we are passionate about delivering high-quality,
-                innovative solutions that help businesses grow. Whether you need graphic
-                design, illustration design, marketing strategies, or app design &
-                development, our experienced team is here to bring your vision to life
-                and build a digital presence that drives results.
+                At QureLogix, we're passionate about delivering premium,
+                cutting-edge solutions that accelerate business growth. Whether you require graphic
+                design, creative illustration, strategic marketing, or app design &
+                development, our expert team is committed to realizing your vision
+                and establishing a digital presence that generates measurable results.
               </p>
             </div>
 
