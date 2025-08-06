@@ -61,31 +61,31 @@ export default function HeroSection() {
                   <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-1">
                     <FontAwesomeIcon icon={faCircleCheck} className='text-white text-sm' />
                   </div>
-                  <span>Custom logo design tailored to your business</span>
+                  <span className='justify-start'>Custom logo design tailored to your business</span>
                 </li>
                 <li className="flex items-center justify-start gap-3 text-gray-200 hover:text-white transition-colors duration-300">
                   <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-1">
                     <FontAwesomeIcon icon={faCircleCheck} className='text-white text-sm' />
                   </div>
-                  <span>Professional and experienced design team</span>
+                  <span className='justify-start'>Professional and experienced design team</span>
                 </li>
                 <li className="flex items-center justify-start gap-3 text-gray-200 hover:text-white transition-colors duration-300">
                   <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-1">
                     <FontAwesomeIcon icon={faCircleCheck} className='text-white text-sm' />
                   </div>
-                  <span>Strategic approach to brand identity</span>
+                  <span className='justify-start'>Strategic approach to brand identity</span>
                 </li>
                 <li className="flex items-center justify-start gap-3 text-gray-200 hover:text-white transition-colors duration-300">
                   <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-1">
                     <FontAwesomeIcon icon={faCircleCheck} className='text-white text-sm' />
                   </div>
-                  <span>Affordable pricing without sacrificing quality</span>
+                  <span className='justify-start'>Affordable pricing without sacrificing quality</span>
                 </li>
                 <li className="flex items-center justify-start gap-3 text-gray-200 hover:text-white transition-colors duration-300">
                   <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-1">
                     <FontAwesomeIcon icon={faCircleCheck} className='text-white text-sm' />
                   </div>
-                  <span>100% satisfaction guarantee</span>
+                  <span className='justify-start'>100% satisfaction guarantee</span>
                 </li>
               </ul>
             </div>
