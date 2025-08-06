@@ -9,7 +9,7 @@ export default function FAQ() {
 
   const faqData = [
     {
-      question: "What services does Textura Digitals offer?",
+      question: "What services does QureLogix offer?",
       answer: "We offer a comprehensive range of digital services including logo design, website development, mobile app development, branding packages, digital marketing, book publishing, and graphic design services. Our team specializes in creating custom solutions tailoblue to your business needs."
     },
     {
@@ -41,7 +41,7 @@ export default function FAQ() {
       answer: "Yes, we offer expedited services for urgent projects. Rush orders typically have a 24-48 hour turnaround for logos and shorter timelines for other services. Additional fees may apply for expedited delivery, which we'll discuss during consultation."
     },
     {
-      question: "What makes Textura Digitals different from other agencies?",
+      question: "What makes QureLogix different from other agencies?",
       answer: "We have a dedicated in-house team of experienced professionals - no freelancers or outsourcing. We focus on creating unique, custom designs that reflect your brand identity. Plus, we offer comprehensive packages, competitive pricing, and exceptional customer service with 100% satisfaction guarantee."
     },
     {

@@ -67,7 +67,7 @@ export default function BookPackages() {
           OUR PACKAGES
         </h1>
         <p className="text-gray-600 max-w-5xl mx-auto leading-relaxed">
-          At Textura Digitals, we offer a range of book publishing service packages to meet your unique goals. Whether you’re just starting out or looking for full-scale publishing, we have an option for you.
+          At QureLogix, we offer a range of book publishing service packages to meet your unique goals. Whether you’re just starting out or looking for full-scale publishing, we have an option for you.
         </p>
       </div>
 

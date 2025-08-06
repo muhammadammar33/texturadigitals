@@ -27,7 +27,7 @@ export default function Recents() {
                     A Glimpse of Our Professional Logo Portfolio
                     </h2>
                     <p className="text-gray-300 text-sm max-w-4xl mx-auto leading-relaxed">
-                    At Textura Digitals, we proudly present our diverse portfolio of apps. From sleek and user-friendly designs to innovative and feature-rich functionality, our experienced developers have the skills and expertise to bring any app idea to life. Take a glimpse into our mobile app development portfolio and see the quality and creativity of our work for yourself.
+                    At QureLogix, we proudly present our diverse portfolio of apps. From sleek and user-friendly designs to innovative and feature-rich functionality, our experienced developers have the skills and expertise to bring any app idea to life. Take a glimpse into our mobile app development portfolio and see the quality and creativity of our work for yourself.
                     </p>
                 </div>
         </div>

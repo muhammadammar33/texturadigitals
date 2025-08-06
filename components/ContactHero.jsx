@@ -8,7 +8,7 @@ export default function ContactHero() {
           Contact Us
         </h1>
         <p className="text-gray-300 text-sm leading-relaxed max-w-6xl mx-auto">
-          We are a team of multidisciplinary experienced experts at Textura Digitals who like producing 
+          We are a team of multidisciplinary experienced experts at QureLogix who like producing 
           outcomes that drive business for businesses of all shapes and sizes.
         </p>
       </div>

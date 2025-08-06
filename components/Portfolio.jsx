@@ -162,7 +162,7 @@ export default function Portfolio() {
                         </div>
 
                         <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 leading-tight text-gray-300">
-                            Textura Digitals – The Logical Web Design and Development Company
+                            QureLogix – The Logical Web Design and Development Company
                         </h1>
                         
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 leading-tight">

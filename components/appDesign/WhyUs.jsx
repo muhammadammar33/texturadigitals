@@ -19,7 +19,7 @@ export default function WhyUs() {
             </h2>
             
             <p className="text-sm text-gray-700 mb-8 leading-relaxed">
-              Textura Digitals is a leading app design company in USA offering businesses of all sizes with stunning mobile apps that boost engagement and maximize ROIs. We pride ourselves on delivering stunning iOS and Android apps that help startups and businesses stand out in a crowded market. Founded in XXXX, our team of experienced app developers has a track record of success in creating professional and highly engaging mobile apps that drive business growth. Whether you're a startup looking to make a splash or an established business looking to take your digital presence to the next level, our affordable app development services are here to help you succeed on the local and global stage.
+              QureLogix is a leading app design company in USA offering businesses of all sizes with stunning mobile apps that boost engagement and maximize ROIs. We pride ourselves on delivering stunning iOS and Android apps that help startups and businesses stand out in a crowded market. Founded in XXXX, our team of experienced app developers has a track record of success in creating professional and highly engaging mobile apps that drive business growth. Whether you're a startup looking to make a splash or an established business looking to take your digital presence to the next level, our affordable app development services are here to help you succeed on the local and global stage.
             </p>
 
             {/* Features List */}

@@ -15,13 +15,13 @@ export default function Footer() {
           <div className="space-y-4 sm:space-y-6 sm:col-span-2 md:col-span-1">
             <Image
               src="/assets/textura-digitals-light.png"
-              alt="Textura Digitals"
+              alt="QureLogix"
               width={200}
               height={80}
               className="h-12 sm:h-15 w-auto"
             />
             <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
-              At Textura Digitals, we're a team of result-focused professionals specializing in all kinds of digital marketing solutions including SEO, Social Media Marketing, Google Ads, Content Marketing, Conversion Rate Optimization, SERP analysis, and more.
+              At QureLogix, we're a team of result-focused professionals specializing in all kinds of digital marketing solutions including SEO, Social Media Marketing, Google Ads, Content Marketing, Conversion Rate Optimization, SERP analysis, and more.
             </p>
             <div className="mt-4 sm:mt-6">
               <Image
@@ -118,7 +118,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="flex flex-col sm:flex-row justify-between items-center pt-2 text-xs sm:text-sm text-gray-400 space-y-2 sm:space-y-0">
-          <p>Textura Digitals. All rights reserved</p>
+          <p>QureLogix. All rights reserved</p>
           <div className="flex space-x-4">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <span>|</span>

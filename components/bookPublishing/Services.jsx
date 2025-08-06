@@ -23,7 +23,7 @@ export default function BookLaunchSection() {
             </p>
 
             <p className="text-sm text-gray-700 mb-8 leading-relaxed">
-              At Textura Digitals, we provide complete publishing solutions that ensure your book is prepared, polished, and presented to the world in the best possible way. From editing and design to formatting and distribution, our team works closely with you to bring your vision to life and make your publishing journey stress-free.
+              At QureLogix, we provide complete publishing solutions that ensure your book is prepared, polished, and presented to the world in the best possible way. From editing and design to formatting and distribution, our team works closely with you to bring your vision to life and make your publishing journey stress-free.
             </p>
 
             {/* Features List */}

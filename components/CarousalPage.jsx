@@ -24,8 +24,8 @@ export default function CarousalPage() {
         descriptions: [
             "Every great book begins with a well-crafted manuscript, but even the best writing can benefit from professional editing. Our expert editors will work closely with you to refine your manuscript, improve flow, structure, and style, and ensure it's free from grammatical errors.",
             "In today's competitive digital landscape, effective marketing is essential to your business success. Our marketing services are designed to create a comprehensive strategy that attracts, engages, and converts your audience. From social media marketing to SEO and content marketing, we help you build a strong presence and connect with your target market.",
-            "Whether you need a simple app or a complex enterprise solution, Textura Digitals offers cutting-edge app design and development services that bring your ideas to life. Our mobile and web applications are user-friendly, scalable, and designed to provide an exceptional user experience.",
-            "Great graphic design tells a compelling story and leaves a lasting impression. At Textura Digitals, we offer comprehensive graphic design services tailoblue to your business needs. From logos and business cards to brochures and social media assets, we ensure your brand identity is consistent, professional, and impactful.",
+            "Whether you need a simple app or a complex enterprise solution, QureLogix offers cutting-edge app design and development services that bring your ideas to life. Our mobile and web applications are user-friendly, scalable, and designed to provide an exceptional user experience.",
+            "Great graphic design tells a compelling story and leaves a lasting impression. At QureLogix, we offer comprehensive graphic design services tailoblue to your business needs. From logos and business cards to brochures and social media assets, we ensure your brand identity is consistent, professional, and impactful.",
             "Your website is often the first point of contact for potential clients. With our expert website design and development services, we ensure your online presence is visually appealing, easy to navigate, and optimized for search engines. We create websites that not only look great but also perform seamlessly across all devices."],
         images: [
             { src: "/assets/Book-And-Magazine.webp", alt: "Book And Magazine" },
@@ -92,7 +92,7 @@ export default function CarousalPage() {
                     </div>
                     
                     <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6 lg:mb-8 leading-tight px-1 sm:px-2">
-                        Textura Digitals – Your Trusted{" "}
+                        QureLogix – Your Trusted{" "}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-600">
                             Custom Logo Design
                         </span>
@@ -102,7 +102,7 @@ export default function CarousalPage() {
                     </h1>
                     
                     <p className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl leading-relaxed max-w-4xl mx-auto px-2 sm:px-4 mb-4 sm:mb-6 md:mb-8">
-                        At Textura Digitals, we don't just create logos; we craft brand identities that elevate{" "}
+                        At QureLogix, we don't just create logos; we craft brand identities that elevate{" "}
                         businesses to new heights. Our team of professional designers combines creativity and technical expertise to deliver{" "}
                         a logo that truly represents your business vision.
                     </p>

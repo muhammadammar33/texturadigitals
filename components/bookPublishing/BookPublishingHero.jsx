@@ -50,7 +50,7 @@ export default function BookPublishingHero() {
               </h1>
               
               <p className="text-md md:text-shadow-md mb-3 leading-relaxed text-gray-200">
-                Your story deserves the spotlight. At Textura Digitals, we offer comprehensive book publishing services, from expert editing and formatting to striking cover design and worldwide distribution. Bring your dream to life with a team dedicated to your success.
+                Your story deserves the spotlight. At QureLogix, we offer comprehensive book publishing services, from expert editing and formatting to striking cover design and worldwide distribution. Bring your dream to life with a team dedicated to your success.
               </p>
 
               {/* Features List */}

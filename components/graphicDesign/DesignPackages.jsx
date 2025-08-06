@@ -157,7 +157,7 @@ export default function BookPackages() {
           OUR PACKAGES
         </h1>
         <p className="text-gray-600 max-w-5xl mx-auto leading-relaxed">
-          At Textura Digitals, we offer customized design packages at affordable prices to meet the unique needs of your business. Our team is dedicated to delivering exceptional results for every project we take on.
+          At QureLogix, we offer customized design packages at affordable prices to meet the unique needs of your business. Our team is dedicated to delivering exceptional results for every project we take on.
         </p>
       </div>
 

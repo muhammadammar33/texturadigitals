@@ -65,7 +65,7 @@ export default function AboutDifferentiators() {
             </h2>
             <p className="text-gray-600 leading-relaxed text-xs sm:text-sm">
                 Top graphic designers, illustration artists, mascot animators, and branding 
-                specialists combine at Textura Digitals to create masterpieces for small and 
+                specialists combine at QureLogix to create masterpieces for small and 
                 large enterprises. We guarantee that you will perform our work for the purpose of 
                 mercenary gain. Instead, we aim to maximize our ability to exist to give just 
                 the greatest in aesthetic creativity.

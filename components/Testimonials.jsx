@@ -22,7 +22,7 @@ export default function Testimonials() {
     {
       id: 2,
       quote: "Web Services To Attract Traffic",
-      text: "Working with Textura Digitals was amazing and they did a commendable job in revamping our website which was not very effective earlier. But now it is not only visually appealing but is also drawing a lot of traffic. I highly recommend Textura Digitals for their web service",
+      text: "Working with QureLogix was amazing and they did a commendable job in revamping our website which was not very effective earlier. But now it is not only visually appealing but is also drawing a lot of traffic. I highly recommend QureLogix for their web service",
       author: "Nathan Walker",
       role: "Comedian & Actor",
       image: "/assets/testimonial.webp"
@@ -38,7 +38,7 @@ export default function Testimonials() {
     {
       id: 4,
       quote: "Custimization and Affordability hand in hand",
-      text: "We have been highly satisfied with the Textura Digitals web service. They hit the nail. We are a startup company and we were looking for something customized, affordable and reliable and Textura Digitals ticked all the checkboxes",
+      text: "We have been highly satisfied with the QureLogix web service. They hit the nail. We are a startup company and we were looking for something customized, affordable and reliable and QureLogix ticked all the checkboxes",
       author: "Amber Alvarez",
       role: "CEO",
       image: "/assets/The-logo-speaks-volume.gif"
@@ -46,7 +46,7 @@ export default function Testimonials() {
     {
       id: 5,
       quote: "Goal-Driven SEO",
-      text: "We already had a website but it was not SEO optimized and we were looking for the SEO service to expand our business visibility. Luckily working with Textura Digitals resolved our business hurdle and our website now ranks in the top result on google search.",
+      text: "We already had a website but it was not SEO optimized and we were looking for the SEO service to expand our business visibility. Luckily working with QureLogix resolved our business hurdle and our website now ranks in the top result on google search.",
       author: "john Lecatelli",
       role: "CEO",
       image: "/assets/The-logo-speaks-volume.gif"

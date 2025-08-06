@@ -15,11 +15,11 @@ export default function BookLaunchSection() {
             </p>
             
             <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6 leading-tight">
-              Launch Your Book with Textura Digitals
+              Launch Your Book with QureLogix
             </h2>
             
             <p className="text-sm text-gray-700 mb-8 leading-relaxed">
-              Textura Digitals offers end-to-end publishing solutions, ensuring your manuscript transforms into a professionally published book. We handle everything from content editing and cover design to ISBN setup and distribution.
+              QureLogix offers end-to-end publishing solutions, ensuring your manuscript transforms into a professionally published book. We handle everything from content editing and cover design to ISBN setup and distribution.
             </p>
 
             {/* Features List */}

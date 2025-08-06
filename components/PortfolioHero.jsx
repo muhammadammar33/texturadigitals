@@ -21,7 +21,7 @@ export default function PortfolioHero() {
             </h1>
 
             <p className="text-sm lg:text-md max-w-5xl mx-auto leading-relaxed mb-4">
-                We have delivered exceptional digital service to our clients. At Textura Digitals our success lies in client’s satisfaction and delivering par excellence digital solutions.
+                We have delivered exceptional digital service to our clients. At QureLogix our success lies in client’s satisfaction and delivering par excellence digital solutions.
             </p>
             </div>
         </div>

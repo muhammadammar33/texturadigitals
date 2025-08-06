@@ -19,7 +19,7 @@ export default function BookLaunchSection() {
             </h2>
             
             <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-              Are you ready to take your business to the next level with powerful, conversion-driven graphic design? Look no further than Textura Digitals! Based in the USA, our team is dedicated to helping our clients succeed through innovative and effective design. With some of the most experienced and innovative designers, we have the skills to bring your vision to life.
+              Are you ready to take your business to the next level with powerful, conversion-driven graphic design? Look no further than QureLogix! Based in the USA, our team is dedicated to helping our clients succeed through innovative and effective design. With some of the most experienced and innovative designers, we have the skills to bring your vision to life.
             </p>
 
             <p className="text-sm text-gray-700 mb-4 leading-relaxed">

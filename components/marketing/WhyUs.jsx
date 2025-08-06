@@ -19,7 +19,7 @@ export default function WhyUs() {
             </h2>
             
             <p className="text-sm text-gray-700 mb-8 leading-relaxed">
-              Your company's success is not just about having a great product; it's about having powerful advertising that can capture the hearts and minds of your audience. And that's where Textura Digitals comes in - we have the talent and expertise to create art that truly captivates and drives purchasing decisions.
+              Your company's success is not just about having a great product; it's about having powerful advertising that can capture the hearts and minds of your audience. And that's where QureLogix comes in - we have the talent and expertise to create art that truly captivates and drives purchasing decisions.
             </p>
             <p className="text-sm text-gray-700 mb-8 leading-relaxed">
               With our skillful and dedicated product advertising design services, we'll ensure your company gets the promotion it deserves. Because let's face it, without effective custom marketing materials, all the cash in the world won't drive the traction and success your company needs to thrive.

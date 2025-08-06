@@ -50,7 +50,7 @@ export default function AppHero() {
               </h1>
               
               <p className="text-md md:text-shadow-md mb-3 leading-relaxed text-gray-200">
-                At Textura Digitals, we create apps that drives crazy engagement for businesses! We are a premium mobile app development company helping companies to increase their digital engagement through interactive and intuitive apps.
+                At QureLogix, we create apps that drives crazy engagement for businesses! We are a premium mobile app development company helping companies to increase their digital engagement through interactive and intuitive apps.
               </p>
 
               {/* Features List */}

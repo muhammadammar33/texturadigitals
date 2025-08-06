@@ -50,7 +50,7 @@ export default function WebsiteHero() {
               </h1>
               
               <p className="text-md md:text-shadow-md mb-3 leading-relaxed text-gray-200">
-                In today's fast-paced digital world, a powerful website is crucial to capturing your audience's attention and standing out from the competition. At Textura Digitals, we specialize in creating stunning, user-friendly websites that are not only visually appealing but also perform seamlessly across all devices.
+                In today's fast-paced digital world, a powerful website is crucial to capturing your audience's attention and standing out from the competition. At QureLogix, we specialize in creating stunning, user-friendly websites that are not only visually appealing but also perform seamlessly across all devices.
               </p>
 
               {/* Features List */}

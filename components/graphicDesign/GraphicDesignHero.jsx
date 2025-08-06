@@ -50,7 +50,7 @@ export default function BookPublishingHero() {
               </h1>
               
               <p className="text-md md:text-shadow-md mb-3 leading-relaxed text-gray-200">
-                At Textura Digitals, we are a US-based full-service digital solution agency helping businesses transform into brands with our innovative and almost quirky company graphic design services. Our exclusive branding services for small businesses bring in the limelight and character they need to compete and win on the global stage.
+                At QureLogix, we are a US-based full-service digital solution agency helping businesses transform into brands with our innovative and almost quirky company graphic design services. Our exclusive branding services for small businesses bring in the limelight and character they need to compete and win on the global stage.
               </p>
 
               {/* Features List */}
