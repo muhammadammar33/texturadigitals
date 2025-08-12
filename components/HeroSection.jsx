@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function HeroSection() {
   return (
     <div
-      className="relative max-w-8xl bg-cover bg-center bg-no-repeat pt-16 min-h-screen flex items-center"
+      className="relative w-8xl bg-cover bg-center bg-no-repeat pt-16 min-h-screen flex items-center"
       style={{
         backgroundImage: "url('/assets/350879.jpg')",
         fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol'
