@@ -184,22 +184,20 @@ export default function Portfolio() {
 
                     {/* Category Navigation */}
                     <div className="overflow-x-auto pb-4 mb-8 px-4 sm:px-8">
-                        <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 shadow-2xl">
-                            <div className="flex gap-2 min-w-max sm:flex-wrap sm:justify-center sm:min-w-0">
-                                {categories.map((category) => (
-                                    <button
-                                        key={category}
-                                        onClick={() => setActiveCategory(category)}
-                                        className={`px-4 sm:px-6 py-3 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap rounded-xl transform hover:scale-105 ${
-                                            activeCategory === category
-                                                ? "text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg font-bold border-2 border-white/30"
-                                                : "text-gray-300 hover:text-white hover:bg-white/10 border-2 border-transparent"
-                                        }`}
-                                    >
-                                        {category}
-                                    </button>
-                                ))}
-                            </div>
+                        <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 shadow-2xl flex gap-2 min-w-max sm:flex-wrap sm:justify-center sm:min-w-0">
+                            {categories.map((category) => (
+                                <button
+                                    key={category}
+                                    onClick={() => setActiveCategory(category)}
+                                    className={`px-4 sm:px-6 py-3 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap rounded-xl transform hover:scale-105 ${
+                                        activeCategory === category
+                                            ? "text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg font-bold border-2 border-white/30"
+                                            : "text-gray-300 hover:text-white hover:bg-white/10 border-2 border-transparent"
+                                    }`}
+                                >
+                                    {category}
+                                </button>
+                            ))}
                         </div>
                     </div>
                 </div>
