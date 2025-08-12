@@ -205,7 +205,7 @@ export default function CarousalPage() {
                     {/* Navigation Arrows - Hidden on mobile */}
                     <button 
                         onClick={() => changeSlide(Math.max(0, currentSlide - 1))}
-                        className="hidden md:flex absolute left-2 lg:left-8 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm text-gray-900 w-12 h-12 lg:w-16 lg:h-16 rounded-full items-center justify-center hover:bg-white hover:shadow-2xl transition-all duration-300 z-20 border border-gray-200/50 group"
+                        className="hidden md:flex absolute left-2 lg:left-[-90px] top-1/2 transform -translate-y-1/2 bg-black/90 backdrop-blur-sm text-white w-12 h-12 lg:w-16 lg:h-16 rounded-full items-center justify-center hover:bg-white hover:shadow-2xl transition-all duration-300 z-20 border border-gray-200/50 group"
                         disabled={isAnimating || currentSlide === 0}
                     >
                         <FontAwesomeIcon icon={faChevronLeft} className="text-lg group-hover:scale-110 transition-transform duration-300" />
@@ -213,7 +213,7 @@ export default function CarousalPage() {
 
                     <button 
                         onClick={() => changeSlide(Math.min(services.length - 1, currentSlide + 1))}
-                        className="hidden md:flex absolute right-2 lg:right-8 top-1/2 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm text-gray-900 w-12 h-12 lg:w-16 lg:h-16 rounded-full items-center justify-center hover:bg-white hover:shadow-2xl transition-all duration-300 z-20 border border-gray-200/50 group"
+                        className="hidden md:flex absolute right-2 lg:right-[-90px] top-1/2 transform -translate-y-1/2 bg-black/90 backdrop-blur-sm text-white w-12 h-12 lg:w-16 lg:h-16 rounded-full items-center justify-center hover:bg-white hover:shadow-2xl transition-all duration-300 z-20 border border-gray-200/50 group"
                         disabled={isAnimating || currentSlide === services.length - 1}
                     >
                         <FontAwesomeIcon icon={faChevronRight} className="text-lg group-hover:scale-110 transition-transform duration-300" />
@@ -221,12 +221,12 @@ export default function CarousalPage() {
 
                     {/* Service Navigation */}
                     <div className="flex justify-center mt-6 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20 px-2 sm:px-4">
-                        <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-xl border border-gray-200/50 w-full max-w-5xl">
+                        <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-2 sm:p-3 md:p-4 lg:p-6 shadow-xl border border-gray-200/50 w-full max-w-7xl">
                             <div className="flex items-center gap-1 sm:gap-2 md:gap-4 lg:gap-8 relative overflow-x-auto max-w-full">
                                 <div className="flex items-center gap-1 sm:gap-2 md:gap-4 lg:gap-8 min-w-max mx-auto">
                                     {services.map((service, index) => (
                                         <React.Fragment key={index}>
-                                            <div className="flex flex-col items-center gap-1 sm:gap-2 md:gap-3">
+                                            <div className="flex flex-col items-center gap-1 sm:gap-2 md:gap-3 py-2">
                                                 <button
                                                     onClick={() => changeSlide(index)}
                                                     className={`text-xs font-medium transition-all duration-300 whitespace-nowrap px-1.5 py-1 sm:px-2 sm:py-1 md:px-3 md:py-1.5 lg:px-4 lg:py-2 rounded-lg transform hover:scale-105 ${

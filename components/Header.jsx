@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 flex items-center px-4 py-4 sm:px-6 lg:px-12 xl:px-50 transition-all duration-300 ${
+      <header className={`fixed max-w-8xl top-0 left-0 right-0 lg:justify-between z-50 flex items-center px-4 py-4 sm:px-6 lg:px-12 xl:px-50 transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}>
         <div className="flex items-center">

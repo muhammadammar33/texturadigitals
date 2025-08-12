@@ -27,8 +27,10 @@ export default function Portfolio() {
         { src: "/assets/logo-2.jpeg", alt: "Logo Design 2" },
         { src: "/assets/logo-3.jpg", alt: "Logo Design 3" },
         { src: "/assets/logo-4.jpg", alt: "Logo Design 4" },
-        { src: "/assets/logo-5.jpg", alt: "Logo Design 5" },
-        { src: "/assets/logo-6.jpg", alt: "Logo Design 6" },
+        { src: "/assets/logo-3.jpg", alt: "Logo Design 5" },
+        { src: "/assets/logo-4.jpg", alt: "Logo Design 6" },
+        { src: "/assets/logo-5.jpg", alt: "Logo Design 7" },
+        { src: "/assets/logo-6.jpg", alt: "Logo Design 8" },
         ],
         "BOOKS PUBLISHING": [
         { src: "/assets/01 (1).jpg", alt: "Books1" },

@@ -553,7 +553,7 @@ export default function PricingPackages() {
 
         {/* Packages Grid - Mobile Optimized */}
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {packageData[activeCategory]?.map((pkg, index) => {
               const isPopular = index === 1 || index === 4; // Make certain packages popular
               const isPremium = index === packageData[activeCategory].length - 1; // Last package is premium
@@ -561,7 +561,7 @@ export default function PricingPackages() {
               return (
                 <div
                   key={index}
-                  className={`group relative bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 h-auto min-h-[520px] sm:h-[580px] flex flex-col w-full transform hover:scale-105 border-2 ${
+                  className={`group relative bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 h-[650px] min-h-[650px] sm:h-[580px] flex flex-col w-full transform hover:scale-105 border-2 ${
                     isPopular 
                       ? 'border-gradient-to-r from-blue-500 to-purple-500 shadow-blue-200/50' 
                       : isPremium 
@@ -625,10 +625,10 @@ export default function PricingPackages() {
 
                   {/* Package Features */}
                   <div className="p-4 sm:p-6 flex-1 flex flex-col relative z-10">
-                    <div className="mb-4 sm:mb-6 flex-1 overflow-y-auto max-h-48 sm:max-h-64 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                    <div className="mb-4 sm:mb-6 flex-1 overflow-y-auto max-h-48 h-[300px] min-h-[300px] sm:max-h-64 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                       <ul className="space-y-2 sm:space-y-3">
                         {pkg.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-start gap-2 sm:gap-3 group-hover:translate-x-1 transition-transform duration-300" style={{transitionDelay: `${featureIndex * 50}ms`}}>
+                          <li key={featureIndex} className="flex items-start gap-2 sm:gap-3 transition-transform duration-300" style={{transitionDelay: `${featureIndex * 50}ms`}}>
                             <FontAwesomeIcon 
                               icon={faCircleCheck} 
                               className={`mt-0.5 sm:mt-1 flex-shrink-0 text-xs sm:text-sm ${

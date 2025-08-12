@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4 sm:space-y-6 sm:col-span-2 md:col-span-1">
             <Image
-              src="/assets/textura-digitals-light.png"
+              src="/assets/Qurelogix.png"
               alt="QureLogix"
               width={200}
               height={80}

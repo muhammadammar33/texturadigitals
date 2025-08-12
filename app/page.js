@@ -22,7 +22,6 @@ export default function Home() {
       <ServicesMenu />
       <HeroSection />
       <CallToAction />
-      <FAQ />
       <ContactCTA />
       <CarousalPage />
       <Portfolio />
@@ -32,6 +31,7 @@ export default function Home() {
       <Testimonials />
       <Awards />
       <Industries />
+      <FAQ />
       <ContactUs />
       <Footer />
     </div>

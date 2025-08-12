@@ -16,7 +16,7 @@ export default function ServicesMenu() {
   }, []);
 
   return (
-    <div className={`hidden lg:block fixed top-16 sm:top-20 left-0 right-0 z-30 px-3 py-3 sm:px-2 lg:px-12 xl:px-50 transition-all duration-300 ${
+    <div className={`hidden max-w-8xl lg:block fixed top-14 sm:top-20 left-0 right-0 z-30 px-3 py-3 mt-[-5px] sm:px-2 lg:px-12 xl:px-50 transition-all duration-300 ${
       isScrolled ? 'bg-black' : 'bg-gray-500/20'
     }`} style={{fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol'}}>
       <nav className={`flex flex-wrap gap-3 sm:gap-2 lg:gap-16 text-xs sm:text-sm transition-colors duration-300 ${
